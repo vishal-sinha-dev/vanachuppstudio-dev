@@ -1,0 +1,66 @@
+{
+  "sections": {
+    "d426eb73-c31d-4ad3-997c-ef4d5547dacc": {
+      "type": "slideshow",
+      "blocks": {
+        "template--18592835240233__d426eb73-c31d-4ad3-997c-ef4d5547dacc-16865913961d5e85ff-0": {
+          "type": "image",
+          "settings": {
+            "text-position": "bottom-left",
+            "text-width": "medium",
+            "image": "shopify:\/\/shop_images\/collections_header.png",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "",
+            "link-text": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18592835240233__d426eb73-c31d-4ad3-997c-ef4d5547dacc-16865913961d5e85ff-0"
+      ],
+      "settings": {
+        "text-color": "auto",
+        "background-color": "none",
+        "spacing-above": false,
+        "spacing-below": false,
+        "spacing-around-blocks": false,
+        "image-aspect-ratio": 32,
+        "darken-image": true,
+        "blocks_per_slide": 1,
+        "box-around-text": false,
+        "auto-rotate": false,
+        "rotate-frequency": 7,
+        "transition_type": "slide",
+        "mobile-image-aspect-ratio": 140,
+        "blocks_per_slide_mobile": "1",
+        "mobile-overlay": true
+      }
+    },
+    "main": {
+      "type": "list-collections",
+      "settings": {
+        "collection-list": [
+
+        ],
+        "view": "collection-thumbnails",
+        "spacing-above": true,
+        "spacing-below": true,
+        "heading": "Our Collections",
+        "aspect-ratio": "square",
+        "image-type": "product",
+        "text-style": "light-with-overlay",
+        "spacing": true,
+        "mobile-overlay": true,
+        "container-width": 4,
+        "width": 4,
+        "mobile-width": "2"
+      }
+    }
+  },
+  "order": [
+    "d426eb73-c31d-4ad3-997c-ef4d5547dacc",
+    "main"
+  ]
+}

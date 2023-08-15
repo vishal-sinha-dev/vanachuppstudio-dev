@@ -1,0 +1,62 @@
+{
+  "sections": {
+    "main": {
+      "type": "article",
+      "settings": {
+        "show-featured": true,
+        "title-position": "below",
+        "show-date": true,
+        "show-author": true
+      }
+    },
+    "navigation": {
+      "type": "article-navigation",
+      "settings": {
+        "show-tags": true,
+        "facebook-enabled": true,
+        "twitter-enabled": true,
+        "pinterest-enabled": true,
+        "email-enabled": true,
+        "url-enabled": true
+      }
+    },
+    "recents": {
+      "type": "article-recents",
+      "settings": {
+        "enable": true,
+        "aspect-ratio": "landscape"
+      }
+    },
+    "comments": {
+      "type": "article-comments",
+      "settings": {
+        "show-comments": true,
+        "disqus-enabled": false,
+        "disqus-shortname": ""
+      }
+    },
+    "c45386ed-706e-47d5-b1d8-291ce71284e8": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "best-sellers",
+        "max-products": 8,
+        "background-color": "none",
+        "light-text": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "featured-collection--image--show": false,
+        "featured-collection--description--show": false,
+        "display-type": "slideshow",
+        "products-per-row--desktop": "3",
+        "products-per-row--mobile": "1"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "navigation",
+    "recents",
+    "comments",
+    "c45386ed-706e-47d5-b1d8-291ce71284e8"
+  ]
+}

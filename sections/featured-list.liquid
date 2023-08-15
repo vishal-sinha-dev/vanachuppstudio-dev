@@ -1,0 +1,372 @@
+{%- liquid
+  assign aspect_ratio = 100.0 | divided_by: section.settings.image-aspect-ratio
+  assign mobile_aspect_ratio = 100.0 | divided_by: section.settings.mobile-image-aspect-ratio
+  assign settings_link = settings.color--alternative
+
+  render 'section-assets', name: 'featured-list', type: 'style'
+-%}
+
+<div class="featured-list--root" data-section-id="{{ section.id }}">
+  {% liquid
+    assign text_color = section.settings.text-color
+    assign bg_color = section.settings.background-color
+    assign container_width = section.settings.container-width
+    assign darken_image = section.settings.darken-image
+    assign image = section.settings.image
+    assign mobile_image = section.settings.mobile-image
+    assign image_aspect_ratio = aspect_ratio
+    assign mobile_image_aspect_ratio = mobile_aspect_ratio
+    assign overline = section.settings.overline
+    assign parallax_enabled = section.settings.parallax-enabled
+    assign spacing_above = section.settings.spacing-above
+    assign spacing_below = section.settings.spacing-below
+    assign text_position = section.settings.text-position
+    assign text_width = section.settings.text-width
+    assign title = section.settings.title
+
+    assign dark_background = false
+    if bg_color == 'dark'
+      assign dark_background = true
+    endif
+
+    assign cover_image = true
+    if image_aspect_ratio
+      assign cover_image = false
+    endif
+
+    assign cover_image_mobile = true
+    if mobile_image_aspect_ratio
+      assign cover_image_mobile = false
+    endif
+
+    assign mobile_heading_type = 'section-heading--mobile'
+    assign mobile_heading_type = 'featured-heading'
+
+    assign darken_image_mobile = false
+    if darken_image
+      assign darken_image = true
+    endif
+
+    assign show_placeholder_image = false
+    unless image
+      assign show_placeholder_image = true
+    endunless
+
+    assign heading_type = 'section-heading'
+
+    assign text_exists = false
+    if overline != blank or title != blank
+      assign text_exists = true
+    endif
+  %}
+
+  <div
+    class="featured-content--root"
+    data-banner-promo="{{ banner_promo }}"
+    data-container-width="{{ container_width }}"
+    data-cover-image="{{ cover_image }}"
+    data-cover-image-mobile="{{ cover_image_mobile }}"
+    data-dark-background="{{ dark_background }}"
+    data-darken-image="{{ darken_image }}"
+    data-overlap="{{ overlap }}"
+    data-spacing-above="{{ spacing_above }}"
+    data-spacing-below="{{ spacing_below }}"
+    data-text-color="{{ text_color }}"
+    data-text-exists="{{ text_exists }}"
+    data-text-position="{{ text_position }}"
+    data-text-width="{{ text_width }}"
+    data-placeholder-image="{{ show_placeholder_image }}"
+    {%- unless image -%}data-background-color="{{ bg_color }}"{%- endunless -%}{%- if attributes -%}{{- attributes -}}{%- endif -%}>
+    {%- if cover_link -%}
+      <a
+        class="featured-content--cover-link"
+        href="{{ link_url }}"
+        {%- if title != blank -%}aria-label="{{ title }}"{%- else -%}aria-label="{{ image.alt }}"{%- endif -%}>
+      {%- endif -%}
+
+      {% comment %}Add bg color here as well so that you can set the outer div to transparent for
+      container width 5 and left and right positions {% endcomment %}
+      <div class="featured-content--container featured-list--container" {%- unless image -%}data-background-color="{{ bg_color }}"{%- endunless -%}style="--featured-content--aspect-ratio:{{ image_aspect_ratio }};--featured-content--mobile-aspect-ratio:{{ mobile_image_aspect_ratio }};">
+        <div class="featured-content--image">
+          {%- liquid
+        if image
+          render "image", image: image, mobile_image: mobile_image, parallax: parallax_enabled, aspect_ratio: image_aspect_ratio, mobile_aspect_ratio: mobile_image_aspect_ratio, darken: darken_image, darken_mobile: darken_image_mobile
+        elsif show_placeholder_image
+          render "placeholder", type: "lifestyle", aspect_ratio: image_aspect_ratio, mobile_aspect_ratio: mobile_image_aspect_ratio, placeholder_index: 2, darken: darken_image, darken_mobile: darken_image_mobile
+        endif
+      -%}
+        </div>
+
+        {%- if text_exists -%}
+          <div class="featured-content--text">
+            <div class="featured-content--text-container">
+              {%- if overline != blank -%}
+                <h2 class="featured-content--overline" data-item="overline">
+                  {{- overline | escape -}}
+                </h2>
+              {%- endif -%}
+
+              {%- if title != blank -%}
+                <h3 class="featured-content--title" data-item="{{ heading_type }} {{ mobile_heading_type }}">
+                  {{- title | escape -}}
+                </h3>
+              {%- endif -%}
+
+              <div class="featured-list--wrap">
+                {%- for block in section.blocks -%}
+                  {%- liquid
+                  assign title = block.settings.title
+                  assign description = block.settings.description
+                  assign image = block.settings.image
+                -%}
+
+                  <div
+                    class="featured-list--item"
+                    data-image-enabled="true"
+                    {{ block.shopify_attributes }}>
+                    <div
+                      class="featured-list--item--image"
+                      data-item="image"
+                      style="width: 64px; height: 64px;">
+                      {%- liquid
+                    if image
+                      render "image", image: image
+                    else
+                      render "placeholder", type: "image"
+                    endif
+                  -%}
+                    </div>
+
+                    {%- if title != blank or description != blank -%}
+                      <div class="featured-list--item--text-container">
+                        {%- if title != blank -%}
+                          <h3 class="featured-list--item--title" data-item="block-heading">
+                            {{- title | escape -}}
+                          </h3>
+                        {%- endif -%}
+
+                        {%- if description != blank -%}
+                          <div class="featured-list--item--description" data-item="rte-content">
+                            {{- description -}}
+                          </div>
+                        {%- endif -%}
+                      </div>
+                    {%- endif -%}
+                  </div>
+                {%- endfor -%}
+              </div>
+
+            </div>
+          </div>
+        {%- endif -%}
+
+      </div>
+
+      {%- if cover_link -%}
+      </a>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Image with Featured List",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Layout and Color"
+      },
+      {
+        "id": "text-color",
+        "label": "Text color",
+        "type": "select",
+        "options": [
+          {
+            "label": "Auto",
+            "value": "auto"
+          }, {
+            "label": "Dark",
+            "value": "dark"
+          }, {
+            "label": "Light",
+            "value": "light"
+          }
+        ],
+        "default": "auto"
+      },
+      {
+        "id": "background-color",
+        "label": "Background color",
+        "type": "select",
+        "options": [
+          {
+            "label": "None",
+            "value": "none"
+          },
+          {
+            "label": "Light",
+            "value": "light"
+          },
+          {
+            "label": "Dark",
+            "value": "dark"
+          },
+          {
+            "label": "Accent 1",
+            "value": "accent-1"
+          }, {
+            "label": "Accent 2",
+            "value": "accent-2"
+          }
+        ],
+        "default": "none"
+      },
+      {
+        "id": "container-width",
+        "label": "Maximum width of container",
+        "type": "range",
+        "min": 1,
+        "max": 6,
+        "step": 1,
+        "default": 6
+      }, {
+        "id": "spacing-above",
+        "label": "Spacing above",
+        "type": "checkbox",
+        "default": false
+      }, {
+        "id": "spacing-below",
+        "label": "Spacing below",
+        "type": "checkbox",
+        "default": false
+      }, {
+        "id": "image-aspect-ratio",
+        "label": "Image aspect ratio",
+        "type": "range",
+        "min": 24,
+        "max": 200,
+        "step": 2,
+        "default": 56
+      }, {
+        "id": "mobile-image-aspect-ratio",
+        "label": "Mobile image aspect ratio",
+        "type": "range",
+        "min": 32,
+        "max": 200,
+        "step": 2,
+        "default": 134
+      }, {
+        "id": "darken-image",
+        "label": "Darken image",
+        "type": "checkbox",
+        "default": true,
+        "info": "Can enhance text visibility"
+      }, {
+        "id": "parallax-enabled",
+        "label": "Enable parallax",
+        "type": "checkbox",
+        "default": false,
+        "info": "Fixes image position when you scroll, use images with a height of at least 2000px to preserve resolution"
+      }, {
+        "id": "text-position",
+        "label": "List Position",
+        "type": "select",
+        "options": [
+          {
+            "label": "Left",
+            "value": "left"
+          }, {
+            "label": "Right",
+            "value": "right"
+          }
+        ],
+        "default": "left"
+      }, {
+        "id": "text-width",
+        "label": "List width",
+        "type": "select",
+        "options": [
+          {
+            "value": "small",
+            "label": "Small"
+          }, {
+            "value": "medium",
+            "label": "Medium"
+          }, {
+            "value": "large",
+            "label": "Large"
+          }, {
+            "value": "full",
+            "label": "Full"
+          }
+        ],
+        "default": "medium"
+      }, {
+        "type": "header",
+        "content": "Content"
+      }, {
+        "id": "image",
+        "label": "Image",
+        "type": "image_picker"
+      }, {
+        "id": "mobile-image",
+        "label": "Mobile image (optional)",
+        "type": "image_picker"
+      }, {
+        "id": "overline",
+        "label": "Overline",
+        "type": "text",
+        "default": "Overline text"
+      }, {
+        "id": "title",
+        "label": "Heading",
+        "type": "text",
+        "default": "Image with text"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "list",
+        "name": "List",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }, {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "Add a title or tagline"
+          }, {
+            "type": "text",
+            "id": "description",
+            "label": "Description",
+            "default": "Explain a set of product features, add illustrations, infographics, logo lists, or link to pages."
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Image with Featured List",
+        "blocks": [
+          {
+            "type": "list"
+          },
+          {
+            "type": "list"
+          },
+          {
+            "type": "list"
+          },
+          {
+            "type": "list"
+          }, {
+            "type": "list"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

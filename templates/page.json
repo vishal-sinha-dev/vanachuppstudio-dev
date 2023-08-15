@@ -1,0 +1,18 @@
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "settings": {
+        "show-title": true,
+        "background-color": "none",
+        "light-text": false,
+        "container-width": 4,
+        "spacing-above": true,
+        "spacing-below": true
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

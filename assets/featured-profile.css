@@ -1,0 +1,8 @@
+.featured-profile--content {
+  padding: 20px;
+  text-align: center;
+}
+.featured-profile--name {
+  color: var(--bg-color--dark);
+  font-weight: 600;
+}

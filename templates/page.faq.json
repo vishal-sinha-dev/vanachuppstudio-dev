@@ -1,0 +1,259 @@
+{
+  "sections": {
+    "16324399488a55ecb4": {
+      "type": "featured-text",
+      "settings": {
+        "background-color": "none",
+        "light-text": false,
+        "container-width": 1,
+        "spacing-above": true,
+        "spacing-below": true,
+        "overline": "",
+        "heading": "FAQs",
+        "text": ""
+      }
+    },
+    "main": {
+      "type": "page",
+      "settings": {
+        "show-title": false,
+        "background-color": "none",
+        "light-text": false,
+        "container-width": 2,
+        "spacing-above": false,
+        "spacing-below": true
+      }
+    },
+    "16324397781a8be68b": {
+      "type": "collapsible-rows",
+      "blocks": {
+        "16324397781a8be68b-0": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "When will my order arrive?",
+            "description": "<p>Every silhouette piece we create is custom and one of a kind and it takes time to make it just right.<strong>Our normal turnaround time is 4 weeks (domestic) and up to 10 weeks (international) from the time you have approved your final proof, although during our busy season (like Mother's Day and Christmas) expect even longer turnarounds.<\/strong> We know what's it like to wait for a package to arrive and we make every effort to send your order within our specified turnaround time.<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "16324397781a8be68b-1": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "What type of pictures should I send?",
+            "description": "<p>We recommend you submit pictures that reflect your everyday style. For gifts like cuff links, jewelry, face profile pictures will create the most beautiful silhouettes. But full body photographs make adorable ornaments and silhouette wall art. For more advise on what photos to send, refer to the Photo Tips section of <a href=\"https:\/\/vanachuppstudio.com\/pages\/our-process\">Our Process<\/a> page.<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "16324397781a8be68b-2": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "I have a lot of picture but don't know which ones to send.",
+            "description": "<p>If you can't decide which pictures to upload or need some help selecting the best ones, please feel free to include 1-2 extra pictures. We would be happy to look through them and pick the one we feel best describes the subject. Before you place an order, please take a moment to familiarize yourself with the type of photos we use. Refer to the Photo Tips section of <a href=\"https:\/\/vanachuppstudio.com\/pages\/our-process\">Our Process<\/a> page.<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "a6080b6f-76b2-411e-84ba-9bbd1dbedff2": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "How do I determine how many custom silhouettes to add to my item?",
+            "description": "<p>If you have one child, pet, etc, you need to select 1 Custom silhouette. For a family of four (dad, mom and two kids) you would need to select 4 Custom silhouettes. Each subject requires its own custom silhouette to be drawn. That said, in some products like the classic charm necklaces, we only charge a $10 for the first custom silhouette, and waive the fee for additional silhouettes.<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "5212a784-4faa-4ff4-b627-6ca5174a15f9": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "Can I add more charms to my necklace as my family grows?",
+            "description": "<p>Absolutely! We love working with our customers as their families continue to grow! When you are ready to add more charms to your necklace, please get in touch with us, OR leave a note with your order telling us you want to add to your existing necklace. You can also mail your necklace to us so we can add the new charm\/s and polish your entire necklace. You may choose to just purchase a loose charm which comes with a larger loop you can easily slide on your necklace.<\/p><p>NOTE: depending on how long it's been since your last order with us, the sizes of the charms could have changed slightly. We ask that you make every effort to let us know your previous order number, so we can do our best to match the size of the new charms to that of your old ones. To add a new charm to your necklace, simply purchase the charm of choice under the \"<a href=\"https:\/\/vanachuppstudio.com\/pages\/how-to-add-a-new-charm-to-your-necklace\">Adding to your necklace<\/a>\" section of our shop. Simply follow the following steps:<\/p><p><\/p><p>If you're mailing your necklace in do so a way that guarantees it won't tangle. If your necklace requires extra attention due to a knotted chain, a fee will apply. A tangled necklace may also cause delays in production. You can email orders@lepapierstudio.com for any additional questions or advice on the safest way to send your jewelry to our studio.<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "4f8b56ac-98e5-4f53-baec-f68091aae877": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "Will I receive a proof?",
+            "description": "<p>All custom orders (orders for which you have uploaded pictures for custom silhouettes) receive one electronic proof within 7-10 business days of placing the order (expect longer turnarounds during busy holiday seasons!) You can request one round of minor adjustments to the first proof (such as removing hair wisps or adding a few more curls) at no additional fee. But if a new silhouette is requested to be drawn from a completely different photo, an additional design fee of $10 will apply to the order (you will be billed separately for that).<\/p><p>For orders that don't require custom silhouettes to be drawn (but rather selected from our stock silhouettes), you may not receive a proof.<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "37f32a09-4886-417d-bc24-02baadbc9ca1": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "How often do you run sales or promotions?",
+            "description": "<p>It all depends! You can follow us on Instagram <a href=\"https:\/\/www.instagram.com\/vanachuppstudio\/\">@vanachuppstudio<\/a> to stay up to date on promotions, new products, behind the scenes happenings and see samples of our work on our clients hands. Also make sure to sign up for <a href=\"https:\/\/manage.kmail-lists.com\/subscriptions\/subscribe?a=PPP8vS&g=NMmD2a\">our newsletter<\/a> to get notifications before sales are happening.<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "6bc70f31-6a72-4ba3-9bfc-7c9ef8e4ebd6": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "Which material should I choose for my jewelry?",
+            "description": "<p>All of our jewelry (with the exception of a few lockets) is 14K solid yellow, rose and white gold. Please refer to our <a href=\"https:\/\/vanachuppstudio.com\/pages\/jewelry-care\">Materials\/Jewelry Care<\/a> page to get more details on the properties of each metal before making your decision on which metal to choose. You can also contact us at any time with questions before you make a purchase.<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "2ab8f7b1-8257-442f-ad7e-df3c40f60de4": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "Do you do repairs?",
+            "description": "<p>We do! We take great pride of the quality and craftsmanship of our pieces. Our jewelry is meant to be worn daily. However, jewelry is by its very nature delicate. If you should experience the need for a repair, we are here to help. We offer free repairs within 60 days for any breakage caused by manufacturer defect. We are also happy to re-polish any jewelry piece you purchased with us within 90 days of its arrival. Simply get in touch with us through our <a href=\"https:\/\/vanachuppstudio.com\/collections\/add-on-products-services\/products\/request-for-repair\">Request for Repair <\/a>page. Products that have been altered by another jeweler are not eligible for repairs. International orders are not eligible for returns or repairs.<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "340a0c33-6afd-4281-b276-74f6f0b8eaeb": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "Will I be charged sales tax?",
+            "description": "<p>All orders shipped in Virginia are charged a 5.3% sales tax. This is because we have a physical location in Virginia. We do not charge sales tax to orders shipped in other states<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "22cc23b4-81ae-4a05-9fd2-12b8567082ec": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "What are your shipping rates?",
+            "description": "<p>We offer Flat Rate shipping for both Domestic and International. Orders over $275 ship for free within the US. We ship via UPS within the US and International orders. The following are our shipping rates. Orders Over $650 will require a signature for delivery. Please contact us if you require your shipment to be delivered without a signature. Please note, due to Covid-19, shipping carriers may sign your package on your behalf.<\/p><p>UPS Ground (2-7 business days within the US) <strong>$10.00<\/strong><\/p><p>UPS Express Mail (1-2 business days within the US) <strong>$45.00<\/strong><\/p><p>Shipping fees on international orders are calculated based on location and country and can be viewed at checkout.<\/p><p><strong>Expedited Shipping is different from Expedited Production. If you want an order to be expedited, you should let us know when you would like to receive it by. That will help us determine the total expedited cost. Expediting production of your order is an additional cost of $35 (can be ordered <\/strong><a href=\"https:\/\/vanachuppstudio.com\/collections\/expedited-service\/products\/expedited-service\"><strong>HERE<\/strong><\/a><strong>) - plus the cost of expedited shipping $45 within the US.<\/strong><\/p><p>Please note that shipping times DO NOT include the processing time required for your order to be created. The processing time for your item can be found in the item description page of each design. We are not able to refund for lost packages that have been confirmed as \"delivered\" by either carrier or for orders that arrive late due to postal service error.<\/p><p>Important: all our US orders ship via UPS and include a $100 insurance. Customers wishing to have their entire order's amount insured, should add Route to their purchase. Route is shipping insurance that helps you track, protect and resolve any issues related with theft or loss during shipment.<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "9ccff50c-b98d-4838-81df-afcfd70d7d2d": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "International Orders",
+            "description": "<p>We love shipping our products to people all around the world. Because of the time and cost associated with shipping our products internationally, all international orders are <strong>FINAL SALE<\/strong>. Many countries collect customs\/duty fees for international purchases, so please review your country's international customs policies as we are unaware and are not responsible for the payment of those duties and fees. We are not to be held responsible for packages that have not been delivered by the country's local post office or the length of time packages are held at customs. By purchasing from our store, international buyers agree to our shipping policies. International orders can't be expedited. UPDATE - Due to recent EU prohibitions, we are unable to ship jewelry products over $500 to UK and a few other countries. We have no control over these regulations and if you place orders with delivery to UK and your package is lost, are not to be held responsible. By purchasing from our store, international buyers agree to our shipping policies. <strong>Please note <\/strong>: All International orders are shipped via UPS.<\/p><p><strong>Please note <\/strong>that the following countries have prohibited imports of Jewelry from the USA. Unfortunately, we can not ship any jewelry to these locations. Albania, Algeria, Andorra, Angola, Azerbaijan, Bangladesh, Belarus, Botswana, Bulgaria, Burundi, Republic of Congo, Czech Republic (gold jewelry is prohibited), Djibouti, Dominican Republic, Estonia, Gabon, Gambia, Guadeloupe, Guinea, India, Iraq, Israel, Kuwait, Lativa, Libya, Lithuania, Luxembourg, Moldova, Montenegro, Nepal, Nigeria, Pakistan, Palestine, Paraguay, Reunion, Russia, Rwanda, Senegal, Serbia, Syria, Togo, Tunisia and Yemen.<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "6f64a38e-300e-455b-a63c-9d8fd0746bff": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "What is Route Package Protection?",
+            "description": "<p>We're proud to offer Route package protection to help protect your priceless investment in one of our heirloom pieces! While we take every precaution when shipping our pieces, sometimes accidents or errors occur once your final piece has started it's journey to you.<\/p><p>By choosing Route at checkout, you're opting for piece of mind should the unexpected happen such as loss, theft, and damage. It makes it seamless for us, and more importantly you, to get your piece remade as quickly as possible.<\/p><p>Effective April 12, 2023: Route adds $1.55 for orders under $100 USD, and 2.9% for orders over $100 USD.<\/p><h3>ADDITIONAL INFORMATION<\/h3><p>Make shipping 100% carbon neutral. Visit <a href=\"https:\/\/route.com\/sustainability\">route.com\/sustainability<\/a> to learn more.<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "c7da6b2b-feff-4050-b3df-64b75deaaf4c": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "My order arrived damaged, or was lost or stolen.",
+            "description": "<p>If you purchased Route Package Protection at checkout and believe that UPS or the postal service has lost your piece, or it has arrived damaged, you can start your claim by visiting <a href=\"https:\/\/claims.route.com\/%20\" target=\"_blank\">https:\/\/claims.route.com\/<\/a> you will need your <strong>e-mail address<\/strong> and <strong>order number<\/strong>.<\/p><p>Follow the prompts once you have entered that information and Route will automatically place an order for you that we will receive on our end so that we can quickly get your order put back into production.<\/p><p><strong>If you did opted out of Route Package Protection<\/strong> please reach out to us so that we can work on starting a claim with UPS.<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "5bde3aa6-c82b-45bb-8863-64304452acce": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "My order has been archived, now what?",
+            "description": "<p>Should you wish to reactivate an archived order, a fee of $20 will be applied to cover the administrative & studio costs associated with reactivating and collecting the pieces necessary to fulfill your order. You can submit a request for order reactivation by contacting <a href=\"mailto:orders@vanachuppstudio.com\">orders@vanachuppstudio.com<\/a>.<\/p><p>Once we have received your request we will send an invoice for the associated fee and resend any proofs that had previously been sent. Once paid, we will resume our standard our production timeline.<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "19f81411-1bed-4b67-a815-3b2995f3d30b": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "CHANGE ORDERS + RETURNS",
+            "description": "<p><strong>Change Orders<\/strong><\/p><p>When your custom silhouette is approved that means it will be produced as shown in your proof! Any requests for changes at this point to your proof may not be able to be accommodated. If changes or updates are possible, the customer may be subject to a <em>$25 change fee<\/em> and possibly extend the order turnaround time.<\/p><p><strong>No design alterations can be made on charms already created previously.<\/strong> This includes, but is not limited to, adding and\/or taking off loops on the charms.<\/p><p>If you need to alter the design of your piece, you will need to order an entirely new piece.<\/p><p><strong>Return Policy<\/strong><\/p><p>We take great pride in our craftsmanship and carefully select each of the products we offer. The following policies take in consideration the time and effort it takes to create and curate each product while upholding industry best practices. <\/p><p><strong>Custom Products (any product created with custom silhouettes, birthstones or custom engraving) placed outside of a sale or promotion<\/strong> - You have within 24 hours to cancel your order for a 100% refund. After 24 hours, you can no longer cancel your order. Instead, we would issue store credit you can use to modify your order or to save for future use. If we have already begun working on your custom order, you would receive store credit minus the $20 design fee per each silhouette created. <em>Vana Chupp Studio reserves the right to review policies on a case by case scenario.<\/em><\/p><p><strong>Custom Orders placed during a sale or promotion.<\/strong>  - You have 24 hours to cancel. After that a store credit will be issued in the amount paid. If we have already begun working on your custom design, you would receive store credit minus the $20 design fee per each design created.<\/p><p><strong>Custom pieces that have been \"Approved\" are Final Sale. <\/strong>-The email sent to you by our team, \"Proof for Approval\" that includes your proof explicitly lays out the details of your order and how to modify or update your order prior to production. An exception is if an error was made on our part that deviates from the original order\/approved proof ( incorrect spelling or date, etc). However, that must be brought to our attention within 5 days of receiving.<\/p><p><strong>Non Custom Items<\/strong> - (items that have zero customization available, such as some of our Last Minute Gifts products ) within 5 days of receiving, not been worn and in the original condition will be considered for a refund or exchange. A restocking fee of 15% of the retail value will be taken out of the final value. Upon inspection and within 5 days of receiving, store credit will be issued (minus the restocking fee and shipping cost). Customers will be responsible to ship the items back to the studio. Items will be inspected prior to receiving the return\/exchange or credit. Vana Chupp Studio reserves the right to review policies on a case by case scenario.<\/p><p>Due to the highly customized, labor intensive nature of our designs, if we have already began crafting a custom item for you, we may not be able to cancel the pending order. <\/p><p><strong>Please refer to the description of each product before proceeding with a purchase.<\/strong> The size and specifics of each piece are clearly defined on the description of the product and should help answer any questions you may have.<\/p><p><strong>House Illustrations <\/strong>: Once an order has been placed (and a deposit paid) you can cancel it within 48 hours. After that we aren't able to cancel your order (even if we haven't started yet). The reason for this is that we only can take a handful of house commissions at a time. If you order one, someone else can't! You can submit photos for your home illustration at a later time. Our photo submission deadline doesn't apply to this product.<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "adc048c0-36ac-468b-9bd4-34abfe05978b": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "CUSTOM ORDER ARCHIVAL",
+            "description": "<p>Due to the custom nature of the majority of our pieces, we will send a proof to the email used to place your order within 7-10 business days. Please add <a href=\"mailto:orders@vanachuppstudio.com\">orders@vanachuppstudio.com<\/a> so that you will receive our emails. If we do not hear from you (with modifications or approval) we will send 2 follow ups, one as a follow up email within several days of sending the initial proof and the final as a phone call if a phone number is provided.<\/p><p>This policy outlines the procedures for archiving and restocking custom orders that have remained inactive for 60 days or longer. Inactive custom orders refer to orders for which no activity, communication, or progress has occurred within the specified timeframe. The purpose of this policy is to streamline inventory management and ensure efficient allocation of resources. Additionally, a fee will be implemented to reactivate an archived order.<\/p><h2>Archiving Procedure<\/h2><ol><li>Notification: Customers with custom orders that have been inactive or not received any communication for 45 days will be sent a notification via email, informing them of the approaching archival process. The notification will include a reminder of the order details and the consequences of inactivity.<\/li><li>Grace Period: Following the notification, customers will have a grace period of 15 days to respond, providing an update on their order status, requesting an extension, or requesting store credit (good for up to 1 year at time of issuance.)<\/li><li>Archiving: If no response is received within the 15-day grace period, the custom order will be archived. Archiving involves removing the order from active production and stock management systems, categorizing it separately for future reference and restocking the materials collected for the order.<\/li><li>Confirmation: Once the order is archived, customers will receive a final notification confirming the archival and restocking process. The confirmation will include information on how to reactivate the order, should they wish to do so in the future.<\/li><\/ol><h2>Restocking Procedure<\/h2><p>Upon archiving an order, the materials collected (such as jumprings, charms, chains, etc.) specifically for that order will be reintegrated into the general inventory to be utilized for new orders. All digital proofs will be kept on file and can be used at any future time using the original order number.<\/p><h2>Order Reactivation<\/h2><p>Should you wish to reactivate an archived order, a fee of $20 will be applied to cover the administrative & studio costs associated with reactivating and collecting the pieces necessary to fulfill your order. You can submit a request for order reactivation by contacting <a href=\"mailto:orders@vanachuppstudio.com\">orders@vanachuppstudio.com<\/a>.<\/p><p>Once we have received your request we will send an invoice for the associated fee and resend any proofs that had previously been sent. Once paid, we will resume our standard our production timeline.<\/p><h2>Exceptions<\/h2><p>Exceptions to this policy may be granted in extraordinary circumstances or with the prior agreement between the customer and Vana Chupp Studio. These exceptions will be documented to avoid future fees associated with reactivating an order. <\/p><p>If you feel we did not adequately attempt to reach you before archiving your order, we are happy to address your concerns and reevaluate our processes to better serve our customers.<\/p><p><br\/><\/p><p><em>This policy will be reviewed and modified as needed to ensure its continued relevance and effectiveness.<\/em><\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "d6319ad4-2ece-4f88-85a9-1a9d3c1d4139": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "COLORS + PRODUCT INFORMATION",
+            "description": "<p>Vana Chupp Studio makes every attempt to accurately display all colors shown in this website. However, colors may very slightly due to the variation on the monitor they are viewed on. Colors printed vs seen on a screen are also slightly different. Metals are hard to photograph. We do our best to capture their true qualities and colors. Some facial features and hair detail might be slightly different on the final product than what shown on the proof especially when the product undergoes the laser cutting procedure. Metals melt slightly due to the heat released during the laser cutting causing some details like hair, nose and lips to get minimized. This is more visible on the tiny and medium charms as well as the silhouette rings and tiny pendants.<\/p><p><strong>Please note that for our smallest size charms, some of the facial features might be less noticeable and not as clear compared to the actual proof you will receive.<\/strong> The digital proofs are done according to the size of the picture\/s provided with your order. The actual silhouette charms are much smaller. If this is an issue for you, please opt for a larger size charm. We no longer include eyelashes on any of our jewelry pieces. We are happy to answer additional questions regarding sizing, prior to you placing an order.<\/p><p><strong>MATERIALS + CARE<\/strong><\/p><p><strong>14k Solid Gold<\/strong> - We use 14k solid yellow, rose and white gold on our heirloom jewelry so your pieces will last you a lifetime. Unlike plated gold, solid gold will not rub off or alter in appearance over time, is most hypoallergenic and durable for everyday wear. Gold should be cleaned regularly in order to maintain its beauty and luster. It can get dirty though. Like any precious metal, solid gold does scratch, so be mindful. Using the included polishing cloth to clean is highly recommended to ensure the longevity of your pieces.<\/p><p><strong>.925 Sterling Silver<\/strong> - PLEASE NOTE: As of March 1, 2023 we have discontinued Sterling Silver on the majority of our products. You can still add on to your existing Sterling Silver piece through our <a href=\"https:\/\/vanachuppstudio.com\/collections\/add-on-products-services\/products\/add-a-charm-add-on\">Add-A-Charm product<\/a> until July 1, 2023. For more details, please read our post <a href=\"https:\/\/vanachuppstudio.com\/blogs\/blog\/why-we-are-retiring-sterling-silver\">HERE<\/a>. The best way to clean your sterling silver charm or ornament, and to prevent or remove dirt and tarnish, is to use a silver polishing cloth or any anti-tarnish silver polish which can be found at your local supermarket or drugstore. Rub the cloth on the charm until it's shiny again.<\/p><p>If you have any additional questions about this decision, please don't hesitate to reach out at<a href=\"mailto:info@vanachuppstudio.com\">info@vanachuppstudio.com<\/a><\/p><p><strong>Gold Filled<\/strong> - PLEASE NOTE: We have discontinued this metal as of September 9, 2019. For more details please read our post <a href=\"https:\/\/vanachuppstudio.com\/blogs\/blog\/why-are-we-retiring-gold-filled\">HERE<\/a>.<\/p><p><strong>Brass <\/strong>- We use brass on our silhouette and home ornaments. Brass is a base metal and it will tarnish over time receiving a unique patina. This is completely normal. The best way to clean your ornament, and to remove dirt or tarnish is to use a mixture of a teaspoon of lemon juice with a teaspoon of baking soda until it forms a paste like consistency. Salt works great as a substitute to baking soda. Gently rub the mixture over the ornament. Rinse throughout with hot running water and dry immediately with a cotton dish towel. Brass will tarnish quicker than silver and over time obtain a beautiful patina. Please store your ornaments on its original box to ensure they stay beautiful year after year.<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "4c039df9-55f1-4651-8940-bd7d1ee2bbfe": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "JEWELRY MATERIALS + CARE",
+            "description": "<p><strong>14k Solid Gold<\/strong> - We use 14k solid yellow, rose and white gold on our heirloom jewelry so your pieces will last you a lifetime. Unlike plated gold, solid gold will not rub off or alter in appearance over time, is most hypoallergenic and durable for everyday wear. Gold should be cleaned regularly in order to maintain its beauty and luster. It can get dirty though. Like any precious metal, solid gold does scratch, so be mindful. Using the included polishing cloth to clean is highly recommended to ensure the longevity of your pieces.<\/p><p><strong>.925 Sterling Silver<\/strong> - The best way to clean your sterling silver charm, and to prevent or remove dirt and tarnish, is to use a silver polishing cloth or any anti-tarnish silver polish which can be found at your local supermarket or drugstore. Rub the cloth on the charm until it's shiny again. As of July 1, 2023 we no longer offer our jewelry in sterling silver.<\/p><p><strong>Brass <\/strong>- We use brass on our silhouette and home ornaments. Brass is a base metal and it will tarnish over time receiving a unique patina. This is completely normal. The best way to clean your ornament, and to remove dirt or tarnish is to use a mixture of a teaspoon of lemon juice with a teaspoon of baking soda until it forms a paste like consistency. Salt works great as a substitute to baking soda. Gently rub the mixture over the ornament. Rinse throughout with hot running water and dry immediately with a cotton dish towel. Brass will tarnish quicker than silver and over time obtain a beautiful patina. Please store your ornaments on its original box to ensure they stay beautiful year after year.<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "a4b3f29b-6e61-42cf-a96d-4519865dcfac": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "GIFT WRAPPING",
+            "description": "<p>Every Vana Chupp Studio piece is designed to be treasured, and every detail is given a great attention . Each item that leaves our studio is beautifully wrapped, ready to give as a gift. If your order is meant to be a gift, make sure to add our Signature Wrapping to your order. We can add a gift note to any order for you, if you wish. We can also ship a gift directly to the recipient. Just leave us the message in the during the checkout process. If you do not leave us a message indicating your shipment is a gift, your recipient may not be aware of who the package is from!<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "447cc247-19a2-4490-b313-433ee6f9f862": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "DISCLAIMER",
+            "description": "<p>By shopping on our site you acknowledge our <a href=\"http:\/\/vanachuppstudio.com\/pages\/copyright-notice\">Copyright Notice<\/a> and <a href=\"https:\/\/vanachuppstudio.com\/pages\/terms-of-use\">Terms of Use<\/a>.<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        }
+      },
+      "block_order": [
+        "16324397781a8be68b-0",
+        "16324397781a8be68b-1",
+        "16324397781a8be68b-2",
+        "a6080b6f-76b2-411e-84ba-9bbd1dbedff2",
+        "5212a784-4faa-4ff4-b627-6ca5174a15f9",
+        "4f8b56ac-98e5-4f53-baec-f68091aae877",
+        "37f32a09-4886-417d-bc24-02baadbc9ca1",
+        "6bc70f31-6a72-4ba3-9bfc-7c9ef8e4ebd6",
+        "2ab8f7b1-8257-442f-ad7e-df3c40f60de4",
+        "340a0c33-6afd-4281-b276-74f6f0b8eaeb",
+        "22cc23b4-81ae-4a05-9fd2-12b8567082ec",
+        "9ccff50c-b98d-4838-81df-afcfd70d7d2d",
+        "6f64a38e-300e-455b-a63c-9d8fd0746bff",
+        "c7da6b2b-feff-4050-b3df-64b75deaaf4c",
+        "5bde3aa6-c82b-45bb-8863-64304452acce",
+        "19f81411-1bed-4b67-a815-3b2995f3d30b",
+        "adc048c0-36ac-468b-9bd4-34abfe05978b",
+        "d6319ad4-2ece-4f88-85a9-1a9d3c1d4139",
+        "4c039df9-55f1-4651-8940-bd7d1ee2bbfe",
+        "a4b3f29b-6e61-42cf-a96d-4519865dcfac",
+        "447cc247-19a2-4490-b313-433ee6f9f862"
+      ],
+      "settings": {
+        "background-color": "none",
+        "light-text": false,
+        "heading": "",
+        "title-alignment": "center",
+        "container-width": 2,
+        "spacing-above": false,
+        "spacing-below": true
+      }
+    }
+  },
+  "order": [
+    "16324399488a55ecb4",
+    "main",
+    "16324397781a8be68b"
+  ]
+}

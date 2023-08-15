@@ -1,0 +1,188 @@
+{%- liquid
+  render 'section-assets', name: 'product-tabs', type: 'style'
+  render 'section-assets', name: 'product-tabs', type: 'script'
+-%}
+
+<div class="product-tabs--root" data-section-id="{{ section.id }}">
+  {%- liquid
+    assign container_width = section.settings.container-width
+    assign spacing_above = section.settings.spacing-above
+    assign spacing_below = section.settings.spacing-below
+    assign app_block_label = section.settings.app-block-label
+  -%}
+
+  <div
+    class="featured-content--root"
+    data-container-width="{{ container_width }}"
+    data-spacing-above="{{ spacing_above }}"
+    data-spacing-below="{{ spacing_below }}">
+
+    <div class="featured-content--container">
+
+      <div class="product-tabs--wrap">
+
+        {% assign apps = "" | split: "|" %}
+        {% for block in section.blocks %}
+          {% if block.type == "@app" %}
+            {% assign apps = apps | append: block %}
+          {% endif %}
+        {% endfor %}
+        {% assign appsSize = apps | size %}
+
+        <div class="product-tabs--header-wrap">
+          {% for block in section.blocks %}
+            {%- case block.type -%}
+              {%- when 'description' -%}
+              <div class="product-tabs--header">
+                {{- block.settings.label -}}
+              </div>
+
+              {%- when 'content' -%}
+              <div class="product-tabs--header">
+                {{- block.settings.label -}}
+              </div>
+
+              {%- when 'liquid' -%}
+              <div class="product-tabs--header">
+                {{- block.settings.label -}}
+              </div>
+
+            {%- endcase -%}
+          {% endfor %}
+
+          {% if appsSize > 0 %}
+            <div class="product-tabs--header">
+              {{- app_block_label -}}
+            </div>
+          {% endif %}
+        </div>
+
+        <div class="product-tabs--body-wrap">
+          {% for block in section.blocks %}
+            {%- case block.type -%}
+              {%- when 'description' -%}
+              <div class="product-tabs--body" data-item="rte-content">
+                {{- product.description -}}
+              </div>
+
+              {%- when 'content' -%}
+              <div class="product-tabs--body" data-item="rte-content">
+                {{- block.settings.content -}}
+              </div>
+
+              {%- when 'liquid' -%}
+              <div class="product-tabs--body">
+                {{- block.settings.custom-liquid -}}
+              </div>
+
+            {%- endcase -%}
+          {% endfor %}
+
+          {% if appsSize > 0 %}
+            <div class="product-tabs--body">
+              {% for block in section.blocks %}
+                {% if block.type == "@app" %}
+                  {%- render block -%}
+                {% endif %}
+              {% endfor %}
+            </div>
+          {% endif %}
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Product Tabs",
+    "class": "section--product-tabs",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Style and layout"
+      },
+      {
+        "id": "container-width",
+        "label": "Maximum width of container",
+        "type": "range",
+        "min": 1,
+        "max": 6,
+        "step": 1,
+        "default": 4
+      },
+      {
+        "id": "spacing-above",
+        "label": "Spacing above",
+        "type": "checkbox",
+        "default": true
+      },
+      {
+        "id": "spacing-below",
+        "label": "Spacing below",
+        "type": "checkbox",
+        "default": true
+      }, {
+        "id": "app-block-label",
+        "label": "App Block Label",
+        "type": "text",
+        "default": "Reviews"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "description",
+        "name": "Description",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "text",
+            "id": "label",
+            "label": "Label",
+            "default": "Description"
+          }
+        ]
+      }, {
+        "type": "content",
+        "name": "Custom Content",
+        "settings": [
+          {
+            "type": "text",
+            "id": "label",
+            "label": "Label",
+            "default": "Description"
+          }, {
+            "type": "richtext",
+            "id": "content",
+            "label": "Content",
+            "default": "<p>Custom Product Details.</p>"
+          }
+        ]
+      }, {
+        "type": "liquid",
+        "name": "Custom liquid",
+        "settings": [
+          {
+            "type": "text",
+            "id": "label",
+            "label": "Label",
+            "default": "Custom Liquid"
+          }, {
+            "type": "liquid",
+            "id": "custom-liquid",
+            "label": "Custom Liquid",
+            "info": "Add app snippets or other Liquid code to create advanced customizations."
+          }
+        ]
+      }, {
+        "type": "@app"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Product Tabs"
+      }
+    ]
+  }
+{% endschema %}

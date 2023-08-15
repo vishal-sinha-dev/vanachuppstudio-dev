@@ -1,0 +1,68 @@
+<h2><span>{{ section.settings.heading }}</span></h2>
+
+<div class="about-team--inner">
+  <div class="about-team--slideshow about-slideshow">
+  {% for block in section.blocks %}
+    <div class="about-team--member">
+      <div class="about-team--image">
+        {{ block.settings.image | img_url: '600x' | img_tag }}
+      </div>
+      <p class="about-team--name">
+        {{ block.settings.title }}
+      </p>
+      <p class="about-team--role">
+        {{ block.settings.role }}
+      </p>
+      <a href="#" class="popup-trigger" data-popup-trigger="header_modal" data-content="about" data-team-member="{{ block.settings.title }}">{{ section.settings.popup_detail }}</a>
+    </div>
+  {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Team",
+    "class": "about-team",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading"
+      },
+      {
+        "type": "text",
+        "id": "popup_detail",
+        "label": "Details Text",
+        "default": "More Details"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Team Member",
+        "type": "team-member",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Name"
+          },
+          {
+            "type": "text",
+            "id": "role",
+            "label": "Role"
+          },
+          {
+            "type": "richtext",
+            "id": "content",
+            "label": "Content"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

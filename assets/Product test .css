@@ -1,0 +1,80 @@
+/* #Tabs
+================================================== */
+  ul.tabs { 
+    display: block;
+    margin: 10px 0 10px 0;
+    padding: 0;
+    border-bottom: solid 1px {{ settings.border_color }};
+    border-top: 0;
+    list-style: none outside; 
+    margin-left: 0;
+}
+ul.tabs li { 
+    display: block;
+    width: auto;
+    height: 30px;
+    padding: 0;
+    float: left;
+    margin-bottom: 0;
+    border: 0;
+    list-style: none outside; 
+    margin-left: 0;
+}
+ul.tabs li a { 
+    display: block; 
+    text-decoration: none;
+    width: auto; 
+    height: 29px; 
+    padding: 0px 15px; 
+    line-height: 30px; 
+    border-width: 1px 0 0 1px; 
+    margin: 0;  
+    font-size: 13px; }
+ul.tabs li a.active { 
+    border: solid 1px {{ settings.border_color }};
+    {% if settings.shop_use_content_bg_color %}
+      background-color: {{ settings.shop_content_bg_color }};
+      border-bottom: {{ settings.shop_content_bg_color }};
+    {% else %}
+      background-color: {{ settings.shop_bg_color }};
+      border-bottom: {{ settings.shop_bg_color }};
+    {% endif %}
+    height: 30px;
+    position: relative;
+    top: -4px;
+    padding-top: 4px;
+    border-right-width: 1px;
+    margin: 0 -1px 0 0;
+    color: {{ settings.regular_color}};
+    -moz-border-radius-topleft: 4px;
+    -webkit-border-top-left-radius: 4px;
+    border-top-left-radius: 4px;
+    -moz-border-radius-topright: 4px;
+    -webkit-border-top-right-radius: 4px;
+    border-top-right-radius: 4px; }
+ul.tabs li:first-child a {
+    -moz-border-radius-topleft: 4px;
+    -webkit-border-top-left-radius: 4px;
+    border-top-left-radius: 4px; }
+ul.tabs li:last-child a {
+    border-width: 1px 1px 0 1px;
+    -moz-border-radius-topright: 4px;
+    -webkit-border-top-right-radius: 4px;
+    border-top-right-radius: 4px; }
+ul.tabs-content { margin: 0; display: block; border: 0;}
+ul.tabs-content > li { display:none; border: 0;}
+ul.tabs-content > li.active { display: block; border: 0;}
+  
+  /* Clearfixing tabs for beautiful stacking */
+  ul.tabs:before,
+  ul.tabs:after {
+    content: '\0020';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0; }
+ul.tabs:after {
+    clear: both; }
+ul.tabs {
+    zoom: 1; }

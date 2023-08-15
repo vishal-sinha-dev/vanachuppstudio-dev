@@ -1,0 +1,325 @@
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "disabled": true,
+      "settings": {
+        "show-title": true,
+        "background-color": "none",
+        "light-text": false,
+        "container-width": 4,
+        "spacing-above": true,
+        "spacing-below": true
+      }
+    },
+    "9d07e5fb-001f-4e18-8d74-42d85917b6a8": {
+      "type": "image-with-text",
+      "settings": {
+        "text-color": "auto",
+        "background-color": "none",
+        "container-width": 6,
+        "spacing-above": false,
+        "spacing-below": false,
+        "image-aspect-ratio": 40,
+        "mobile-image-aspect-ratio": 134,
+        "darken-image": true,
+        "parallax-enabled": false,
+        "text-position": "center",
+        "text-width": "full",
+        "overlap": false,
+        "box-around-text": false,
+        "mobile-overlay": true,
+        "image": "shopify:\/\/shop_images\/VCS-Local-Mamas-2289_c2957648-6c48-487e-8157-4e626b88da6b_1600x582_1.jpg",
+        "overline": "",
+        "title": "VCS REWARDS PROGRAM",
+        "description": "<p>As a rewards member, you’ll earn points and exclusive rewards every time you shop.<\/p>",
+        "link-url": "",
+        "link-text": "",
+        "cta1-text": "Join Now",
+        "cta1-link": "\/account\/register",
+        "cta2-text": "Sign In",
+        "cta2-link": "\/account\/login"
+      }
+    },
+    "e5f18c91-d81f-4628-82fa-bcf81c0e2e04": {
+      "type": "text-columns",
+      "blocks": {
+        "4157db35-38de-49b5-98d6-fefcf4f50bd3": {
+          "type": "column",
+          "settings": {
+            "title": "Join Now",
+            "description": "<p>Create an account and start earning<\/p>",
+            "link-url": "",
+            "link-text": ""
+          }
+        },
+        "f2d5c603-6354-4bcc-94f9-345e5d2b8cf8": {
+          "type": "column",
+          "settings": {
+            "title": "Earn Points",
+            "description": "<p>Earn VCS points every time you shop<\/p>",
+            "link-url": "",
+            "link-text": ""
+          }
+        },
+        "7b4aa530-9dc8-41af-96e1-1f08655d1980": {
+          "type": "column",
+          "settings": {
+            "title": "Redeem Points",
+            "description": "<p>Redeem points towards future purchases<\/p>",
+            "link-url": "",
+            "link-text": ""
+          }
+        }
+      },
+      "block_order": [
+        "4157db35-38de-49b5-98d6-fefcf4f50bd3",
+        "f2d5c603-6354-4bcc-94f9-345e5d2b8cf8",
+        "7b4aa530-9dc8-41af-96e1-1f08655d1980"
+      ],
+      "settings": {
+        "background-color": "none",
+        "light-text": false,
+        "block-spacing": true,
+        "container-width": 4,
+        "spacing-above": true,
+        "spacing-below": true,
+        "width": 3,
+        "aspect-ratio": "square",
+        "thumbnail-type": "number",
+        "image-width": 120,
+        "mobile-width": "2",
+        "text-alignment": "center",
+        "heading": "How It Works",
+        "subtitle": "",
+        "link-url": "",
+        "link-text": "",
+        "show-strikethrough": true
+      }
+    },
+    "3a322c16-3892-4c53-8ff1-4ad1035d2272": {
+      "type": "featured-list",
+      "blocks": {
+        "template--20140906250558__3a322c16-3892-4c53-8ff1-4ad1035d2272-list-1": {
+          "type": "list",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/account.png",
+            "title": "100 Points",
+            "description": "Create an account"
+          }
+        },
+        "template--20140906250558__3a322c16-3892-4c53-8ff1-4ad1035d2272-list-2": {
+          "type": "list",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/dollars.png",
+            "title": "1 Point",
+            "description": "per $1 spent"
+          }
+        },
+        "template--20140906250558__3a322c16-3892-4c53-8ff1-4ad1035d2272-list-3": {
+          "type": "list",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/birthday.png",
+            "title": "200 Points",
+            "description": "Birthday Bonus"
+          }
+        },
+        "template--20140906250558__3a322c16-3892-4c53-8ff1-4ad1035d2272-list-4": {
+          "type": "list",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/noun_star.png",
+            "title": "50 Points",
+            "description": "Leave a product review"
+          }
+        }
+      },
+      "block_order": [
+        "template--20140906250558__3a322c16-3892-4c53-8ff1-4ad1035d2272-list-1",
+        "template--20140906250558__3a322c16-3892-4c53-8ff1-4ad1035d2272-list-2",
+        "template--20140906250558__3a322c16-3892-4c53-8ff1-4ad1035d2272-list-3",
+        "template--20140906250558__3a322c16-3892-4c53-8ff1-4ad1035d2272-list-4"
+      ],
+      "settings": {
+        "text-color": "auto",
+        "background-color": "none",
+        "container-width": 4,
+        "spacing-above": false,
+        "spacing-below": false,
+        "image-aspect-ratio": 80,
+        "mobile-image-aspect-ratio": 134,
+        "darken-image": false,
+        "parallax-enabled": false,
+        "text-position": "left",
+        "text-width": "large",
+        "image": "shopify:\/\/shop_images\/how-to-earn_2x_e54718e9-221b-4afa-808b-41413852397c.jpg",
+        "overline": "",
+        "title": "HOW TO EARN POINTS"
+      }
+    },
+    "6f335641-5b5b-43c9-8150-ce813bdc210e": {
+      "type": "featured-cta",
+      "custom_css": [
+        ".featured-cta--root {margin-bottom: 32px;}"
+      ],
+      "settings": {
+        "text-color": "light",
+        "background-color": "dark",
+        "container-width": 4,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-image": "shopify:\/\/shop_images\/Vana_Chupp_Primary_Black.png",
+        "overline": "",
+        "title": "REFER A FRIEND",
+        "description": "<p>Share your love for VCS: Give your friends $25 off on their first order of $150+ and get $25 for each successful referral.<\/p>",
+        "button-text": "Refer a Friend",
+        "button-url": "",
+        "button-action": "StampedFn.toggleRewardsModal()"
+      }
+    },
+    "c3d42152-f3ac-4bf7-9bc5-217dfff023f3": {
+      "type": "featured-cta",
+      "custom_css": [
+        ".featured-cta--root {margin-bottom: 32px;}"
+      ],
+      "settings": {
+        "text-color": "light",
+        "background-color": "dark",
+        "container-width": 4,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-image": "shopify:\/\/shop_images\/Vana_Chupp_Primary_Black.png",
+        "overline": "",
+        "title": "REDEEM FOR DISCOUNTS",
+        "description": "<p>Redeeming your earned points is easy, simply apply your points balance to your cart.<\/p>",
+        "button-text": "Shop Now to Redeem",
+        "button-url": "shopify:\/\/collections",
+        "button-action": ""
+      }
+    },
+    "78b49b45-f3dc-456d-b7b2-4e2ac061b6c7": {
+      "type": "collapsible-rows",
+      "blocks": {
+        "template--19536881582377__78b49b45-f3dc-456d-b7b2-4e2ac061b6c7-168766867764adc415-0": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "How do I sign up for points?",
+            "description": "<p>Simple. Just create an account at vanachuppstudio.com <a href=\"https:\/\/vanachuppstudio.com\/account\/register\" title=\"https:\/\/vanachuppstudio.com\/account\/register\">here<\/a><\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "ce71c0aa-db78-46fb-a387-d9ef1ada68a5": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "How do I start earning points?",
+            "description": "<p>You will earn 1x per every $1 spent in our shop (before taxes, shipping etc). You can also earn points by following us on social media, signing up for our <a href=\"https:\/\/vanachuppstudio.com\/pages\/newsletter\" title=\"https:\/\/vanachuppstudio.com\/pages\/newsletter\">newsletter <\/a>and <a href=\"https:\/\/vanachuppstudio.attn.tv\/p\/FxY\/landing-page\" title=\"https:\/\/vanachuppstudio.attn.tv\/p\/FxY\/landing-page\">text messaging<\/a>, referring friends and receive an annual birthday reward by entering your birth date.<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "template--19536881582377__78b49b45-f3dc-456d-b7b2-4e2ac061b6c7-168766867764adc415-1": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "What if I already have an account?",
+            "description": "<p>Great! Once you log into your vanachuppstudio.com account and click through the steps for VCS rewards Points, our system will recognize that you are already an account holder and will update. Please remember: points will start accumulating after you've created an account. If you have more questions, reach out to our customer service at info@vanachuppstudio.com<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "template--19536881582377__78b49b45-f3dc-456d-b7b2-4e2ac061b6c7-168766867764adc415-2": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "I already follow you on social media, now what?",
+            "description": "<p>Once you log into your vanachuppstudio.com account and click through the steps for VCS rewards Points, our system will recognize that you are already following us and will update.<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "e89a1ee2-1721-4439-8867-9f1bf36f1249": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "I have a question. Where should I email?",
+            "description": "<p>Send us an email at <a href=\"mailto:info@vanachuppstudio.com\" target=\"_blank\">info@vanachuppstudio.com<\/a>. Happy to assist!<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "1e09dddb-764a-4837-aa11-270cdbeee712": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "How do I spend my points?",
+            "description": "<p>Once you reach 500, 1000, 1500 or 2000 points, you will receive rewards in the form of shop credits.<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "596ed5aa-8581-414e-b128-01aa2d059b32": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "Can I count past purchases towards points?",
+            "description": "<p>Orders placed from March 8, 201 forward will count towards your VCS Rewards for one year before they<br\/>expire. However, any order place prior to March 8, 2021, before VCS<br\/>Rewards Program started, does not count towards your VCS Rewards benefits.<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "9bc9c059-277a-42c4-abd6-5a1e48ce64de": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "How many friends can I refer? Is there a limit?",
+            "description": "<p>No limit! You can refer as many friends as you'd like! Once their order ships, your points will be added to your account. <\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "37686ea1-21c9-4239-bb5c-2bcac27c4c48": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "Do points ever expire?",
+            "description": "<p>You’re free to use your points as soon as they're available. Points expire in 12 months after they are issued. Full VCS Rewards Terms & Conditions can be viewed <a href=\"https:\/\/vanachuppstudio.com\/pages\/vcs-rewards-terms-and-conditions\" title=\"\/pages\/vcs-rewards-terms-and-conditions\">here<\/a>.<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "a76234e5-4505-4c28-9de7-5e37159665f7": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "I didn't get the points on my birthday. Now what?",
+            "description": "<p>You will receive 200 Points on your birthday. Date must be entered into the system more than 30 days before your birthday (ex. If your birthday is August 1 and you enter your birthday no later than July 1 otherwise you'll receive birthday points on your next birthday)<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19536881582377__78b49b45-f3dc-456d-b7b2-4e2ac061b6c7-168766867764adc415-0",
+        "ce71c0aa-db78-46fb-a387-d9ef1ada68a5",
+        "template--19536881582377__78b49b45-f3dc-456d-b7b2-4e2ac061b6c7-168766867764adc415-1",
+        "template--19536881582377__78b49b45-f3dc-456d-b7b2-4e2ac061b6c7-168766867764adc415-2",
+        "e89a1ee2-1721-4439-8867-9f1bf36f1249",
+        "1e09dddb-764a-4837-aa11-270cdbeee712",
+        "596ed5aa-8581-414e-b128-01aa2d059b32",
+        "9bc9c059-277a-42c4-abd6-5a1e48ce64de",
+        "37686ea1-21c9-4239-bb5c-2bcac27c4c48",
+        "a76234e5-4505-4c28-9de7-5e37159665f7"
+      ],
+      "settings": {
+        "background-color": "none",
+        "light-text": false,
+        "heading": "VIP PROGRAM FAQS",
+        "title-alignment": "left",
+        "container-width": 4,
+        "spacing-above": true,
+        "spacing-below": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "9d07e5fb-001f-4e18-8d74-42d85917b6a8",
+    "e5f18c91-d81f-4628-82fa-bcf81c0e2e04",
+    "3a322c16-3892-4c53-8ff1-4ad1035d2272",
+    "6f335641-5b5b-43c9-8150-ce813bdc210e",
+    "c3d42152-f3ac-4bf7-9bc5-217dfff023f3",
+    "78b49b45-f3dc-456d-b7b2-4e2ac061b6c7"
+  ]
+}

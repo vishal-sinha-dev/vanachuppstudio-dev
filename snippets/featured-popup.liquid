@@ -1,0 +1,15 @@
+{%- liquid
+  render 'section-assets', name: 'featured-popup', type: 'style'
+  render 'section-assets', name: 'featured-popup', type: 'script'
+-%}
+
+<featured-popup class="featured-popup--window">
+  <div class="featured-popup--inner">
+    <div class="featured-popup--container">
+      <h5 class="featured-popup--title"></h5>
+      <h6 class="featured-popup--subtitle"></h6>
+      <p class="featured-popup--text"></p>
+    </div>
+    <div class="featured-popup--close">x</div>
+  </div>
+</featured-popup>

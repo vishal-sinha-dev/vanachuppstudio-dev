@@ -1,0 +1,231 @@
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "disabled": true,
+      "settings": {
+        "show-title": false,
+        "background-color": "none",
+        "light-text": false,
+        "container-width": 4,
+        "spacing-above": true,
+        "spacing-below": true
+      }
+    },
+    "3b40a730-850b-4c59-9443-fe54b1b94dbf": {
+      "type": "featured-columns",
+      "blocks": {
+        "template--20140906086718__3b40a730-850b-4c59-9443-fe54b1b94dbf-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We work with your favorite photographs to create Custom Silhouettes of the people, pets, and special moments in your life. From those treasured pictures, Vana Chupp Studio creates one-of-a-kind heirloom pieces: silhouette portraits and exquisite jewelry, and perfectly personal accessories. All custom silhouettes created by Vana Chupp Studio will be kept on file for any future uses you may have.<\/p>",
+            "padding": false
+          }
+        }
+      },
+      "block_order": [
+        "template--20140906086718__3b40a730-850b-4c59-9443-fe54b1b94dbf-text-1"
+      ],
+      "settings": {
+        "background-color": "none",
+        "container-width": 3,
+        "spacing-above": true,
+        "spacing-below": true,
+        "title": "HOW TO ORDER",
+        "subtitle": "",
+        "columns": 1,
+        "show-gap": true
+      }
+    },
+    "d8228357-7381-4c73-8db7-249b1fed4ac4": {
+      "type": "featured-columns",
+      "blocks": {
+        "template--20140906086718__d8228357-7381-4c73-8db7-249b1fed4ac4-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>To order any of our products with a custom silhouette from your photographs, start by selecting the desired product. Where applicable, you may select from our existing silhouette stock or request for your Custom silhouette to be created. If you have ordered from us before, you may choose to re-use the silhouette on file. Each new custom silhouette we create is subject to a one-time-design fee ($10.00). Please note that each person, pet, makes for one custom silhouette - a family of four (dad, mom, two kids) will require four silhouettes. Use this as a guideline when selecting the quantity of Custom Silhouettes for your order.<\/p>",
+            "padding": false
+          }
+        },
+        "template--20140906086718__d8228357-7381-4c73-8db7-249b1fed4ac4-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/CUSTOM_SILHOUETTE_PRODUCT.jpg",
+            "image-description": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20140906086718__d8228357-7381-4c73-8db7-249b1fed4ac4-text-1",
+        "template--20140906086718__d8228357-7381-4c73-8db7-249b1fed4ac4-image-1"
+      ],
+      "settings": {
+        "background-color": "none",
+        "container-width": 3,
+        "spacing-above": true,
+        "spacing-below": true,
+        "title": "ORDERING PROCESS",
+        "subtitle": "SELECTING A CUSTOM SILHOUETTE PRODUCT",
+        "columns": 2,
+        "show-gap": true
+      }
+    },
+    "93793752-3b3d-432b-9232-ce92652778d1": {
+      "type": "featured-columns",
+      "blocks": {
+        "93f87082-8fac-4bd8-9615-54988051c771": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Once you have selected your desired product, and chosen the option to <strong>\"create custom silhouette from my photos\"<\/strong>, you can upload your photo\/s right on the order form. You can do this by clicking the <strong>\"Upload photos\" <\/strong>button. You will see the uploaded photos when you add the product to the cart. If for some reason you aren't able to upload photos while filling out your order, you can always email them to us at orders@vanachuppstudio.com (please place your order number on the email's subject line).<\/p>",
+            "padding": false
+          }
+        },
+        "5a7f5d41-5cb6-41ae-a4bd-a87cb10134b6": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Pro Tip:<\/strong>We now offer the option to purchase the <a href=\"https:\/\/vanachuppstudio.com\/products\/custom-digital-silhouette\" target=\"_blank\" title=\"https:\/\/vanachuppstudio.com\/products\/custom-digital-silhouette\"><strong>Custom Digital Silhouette <\/strong><\/a>before you order. This is a great way to make sure your custom silhouette is on file when you or a loved one is ready to order. Husbands love this option as it takes the guess work out of the process! Need help taking your little ones' photos? We can help with this too! <a href=\"https:\/\/vanachuppstudio.com\/pages\/now-offering-virtual-appointments\" target=\"_blank\" title=\"Book a Virtual Photo Session \"><strong>Book a Virtual Photo Session with us now! <\/strong><\/a>The process is quick and easy and takes place on a Zoom call.<\/p>",
+            "padding": false
+          }
+        },
+        "551c9e4f-d680-4460-bcb5-fb8a5c88c0ef": {
+          "type": "text",
+          "settings": {
+            "text": "<p>In the event that your order came through without any photos attached, we will reach out to you with instructions on how to submit photos via email. Photos can be emailed to us even after you've submitted your order.<\/p>",
+            "padding": false
+          }
+        }
+      },
+      "block_order": [
+        "93f87082-8fac-4bd8-9615-54988051c771",
+        "5a7f5d41-5cb6-41ae-a4bd-a87cb10134b6",
+        "551c9e4f-d680-4460-bcb5-fb8a5c88c0ef"
+      ],
+      "settings": {
+        "background-color": "none",
+        "container-width": 3,
+        "spacing-above": false,
+        "spacing-below": true,
+        "title": "",
+        "subtitle": "SUBMITTING PHOTOS FOR CUSTOM SILHOUETTES",
+        "columns": 2,
+        "show-gap": true
+      }
+    },
+    "eedcd34b-01ef-4a2b-af77-da06cc780dc0": {
+      "type": "featured-columns",
+      "blocks": {
+        "template--20140906086718__eedcd34b-01ef-4a2b-af77-da06cc780dc0-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_b44e5ff1-2def-41fd-9824-ee917568d045.png",
+            "image-description": "1. SNAP YOUR PHOTO"
+          }
+        },
+        "5f2accaa-edc4-433c-b7b0-72e382227acb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_adbc7a62-4327-492b-8d7d-4ca0c9dd8329.png",
+            "image-description": "2. WE DRAW YOUR SILHOUETTE"
+          }
+        },
+        "048d0257-9b87-4839-8635-55aad4aa134c": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3_5a17f273-1598-46ff-b2b8-df7897611316.png",
+            "image-description": "3. YOU RECEIVE AND TREASURE YOUR HEIRLOOM"
+          }
+        }
+      },
+      "block_order": [
+        "template--20140906086718__eedcd34b-01ef-4a2b-af77-da06cc780dc0-image-1",
+        "5f2accaa-edc4-433c-b7b0-72e382227acb",
+        "048d0257-9b87-4839-8635-55aad4aa134c"
+      ],
+      "settings": {
+        "background-color": "none",
+        "container-width": 3,
+        "spacing-above": false,
+        "spacing-below": false,
+        "title": "",
+        "subtitle": "",
+        "columns": 3,
+        "show-gap": true
+      }
+    },
+    "b3a48348-29d3-4089-bdb5-7cb4fdf1027a": {
+      "type": "featured-columns",
+      "blocks": {
+        "template--20140906086718__b3a48348-29d3-4089-bdb5-7cb4fdf1027a-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>Place subject in front of a well-lit background, facing either left or right.<\/li><li>Only one side of the face must show on the photo and entire head should be in the photo.<\/li><li>A relaxed face helps to show the features (eyelashes, nose, lips) more realistically although smiling faces are cute too. It's up to you how you want to photograph them.<\/li><li>Pictures taken with a phone camera work too. Just make sure to take the photos in good lighting, during the daytime is preferred.<\/li><li>If photographing more than one person, take individual pictures.<\/li><\/ul>",
+            "padding": false
+          }
+        },
+        "c2f1284e-36d0-44d7-937a-f818dd8ce3f6": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>Remember to take the picture straight at eye level with the person you are photographing, standing about 2-4 feet away.<\/li><li>If person has long hair (past the shoulder line) put it up. Ponytails, braids, messy buns really do make for cute silhouettes and add character to the final silhouette.<\/li><li>For full body silhouettes, take a picture of the people standing, walking away or towards the camera. This works well when photographing siblings.<\/li><li>When photographing babies, try taking the picture when they are asleep. Hold the camera directly above their face, with only one side of the face showing.<\/li><\/ul>",
+            "padding": false
+          }
+        }
+      },
+      "block_order": [
+        "template--20140906086718__b3a48348-29d3-4089-bdb5-7cb4fdf1027a-text-1",
+        "c2f1284e-36d0-44d7-937a-f818dd8ce3f6"
+      ],
+      "settings": {
+        "background-color": "none",
+        "container-width": 3,
+        "spacing-above": true,
+        "spacing-below": true,
+        "title": "PHOTO TIPS FOR PERFECT SILHOUETTES",
+        "subtitle": "",
+        "columns": 2,
+        "show-gap": true
+      }
+    },
+    "ebfe0b2d-f081-44ae-a0c6-f94e23ae1b1c": {
+      "type": "featured-columns",
+      "blocks": {
+        "115c69c9-0fd1-4b15-a444-6ec4d812225d": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A digital proof will be sent via email in 7-10 business days (14 business days during busy holiday season). Please make any desired adjustments at this time. One final proof will be emailed and, once approved, we begin to process, create, and ship your order. Please allow 3-4 weeks for all custom orders to arrive after they have been approved.<\/p>",
+            "padding": false
+          }
+        },
+        "40361822-6ad4-4f10-866f-51dd75234377": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>If you need an item in a hurry, or want to make sure it will reach you by a certain date, please contact us at (<\/em><a href=\"mailto:orders@lepapierstudio.com\" title=\"mailto:orders@vanachuppstudio.com\"><em>orders@vanachuppstudio.com<\/em><\/a><em>) and we will do our best to answer any questions and accommodate your request. Additional fees may apply for expedited production and\/or express shipping<\/em>.<\/p>",
+            "padding": false
+          }
+        }
+      },
+      "block_order": [
+        "115c69c9-0fd1-4b15-a444-6ec4d812225d",
+        "40361822-6ad4-4f10-866f-51dd75234377"
+      ],
+      "settings": {
+        "background-color": "none",
+        "container-width": 3,
+        "spacing-above": false,
+        "spacing-below": true,
+        "title": "",
+        "subtitle": "PROOFING & TURNAROUND TIME",
+        "columns": 2,
+        "show-gap": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "3b40a730-850b-4c59-9443-fe54b1b94dbf",
+    "d8228357-7381-4c73-8db7-249b1fed4ac4",
+    "93793752-3b3d-432b-9232-ce92652778d1",
+    "eedcd34b-01ef-4a2b-af77-da06cc780dc0",
+    "b3a48348-29d3-4089-bdb5-7cb4fdf1027a",
+    "ebfe0b2d-f081-44ae-a0c6-f94e23ae1b1c"
+  ]
+}

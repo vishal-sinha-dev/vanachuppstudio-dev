@@ -1,0 +1,444 @@
+<!-- Bold D&H //product -->
+{% if product.metafields.inventory.ShappifyHidden == "true" %}
+Product is not available
+{% break %}{% endif %}
+<!-- // end product D&H -->
+<script>
+  $(document).ready(function() {
+    $('ul.tabs').each(function(){
+      var active, content, links = $(this).find('a');
+      active = links.first().addClass('active');
+      content = $(active.attr('href'));
+      links.not(':first').each(function () {
+        $($(this).attr('href')).hide();
+      });
+      $(this).find('a').click(function(e){
+        active.removeClass('active');
+        content.hide();
+        active = $(this);
+        content = $($(this).attr('href'));
+        active.addClass('active');
+        content.show();
+        return false;
+      });
+    });
+  });
+</script>
+
+<div class="sixteen columns">
+  <div class="clearfix breadcrumb">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "{{ shop.url }}",
+              "name": "{{ 'general.breadcrumbs.home' | t }}"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              {% if collection %}
+                "@id": "{{ collection.url }}",
+                "name": "{{ collection.title }}"
+              {% else %}
+                "@id": "/collections/all",
+                "name": "{{ collections.all.title }}"
+              {% endif %}
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@id": "{{ product.url }}",
+              "name": "{{ product.title | escape }}"
+            }
+          }
+        ]
+      }
+    </script>
+    <div class="breadcrumb_text">
+      <span><a href="{{ shop.url }}" title="{{ shop.name | escape }}" itemprop="url"><span itemprop="title">Home</span></a></span>
+      &nbsp; / &nbsp;
+      <span>
+        {% if collection %}
+          <a href="{{ collection.url }}" title="{{ collection.title | escape }}">{{ collection.title }}</a>
+        {% else %}
+          <a href="/collections/all" title="{{ collections.all.title }}">{{ collections.all.title }}</a>
+        {% endif %}
+      </span>
+      &nbsp; / &nbsp;
+      {{ product.title }}
+    </div>
+  </div>
+</div>
+
+  <div class="sixteen columns" itemscope itemtype="http://schema.org/Product">
+    <div id="product-{{ product.id }}">
+
+	<div class="section product_section clearfix">
+
+  	 {% if settings.product_images_position == 'left' %}
+       <div class="eight columns product-imagery {% if product-images == blank %}{% if settings.product_images_position == 'left' %}alpha{% else %}omega{% endif %}{% endif %}">
+         {% include 'product-images' %}
+        </div>
+     {% endif %}
+
+     <div class="eight columns {%if settings.product_images_position == 'left' %}omega{% else %}alpha{% endif %}">
+       <h1 class="product_name" itemprop="name">{{ product.title }}</h1>
+<!--<span class="stamped-product-reviews-badge stamped-main-badge" data-id="{{product.id}}" data-product-title="{{product.title}}" data-product-type="{{product.type}}" style="display: block;"></span>-->
+       
+<span class="stamped-product-reviews-badge stamped-main-badge" data-id="{{ product.id }}" data-product-sku="{{ product.handle }}" style="display: inline-block;" onclick="$('.description > ul > li:nth-child(4) > a').click()">{{ product.metafields.stamped.badge }}</span>       
+       
+       {% if settings.display_vendor %}
+          <p class="vendor">
+            <span class="label">by:</span> <span itemprop="brand">{{ product.vendor | link_to_vendor }}</span>
+          </p>
+       {% endif %}
+
+      {% assign variant = product.selected_or_first_available_variant %}
+      <p class="modal_price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+         <meta itemprop="priceCurrency" content="{{ shop.currency }}" />
+         <meta itemprop="seller" content="{{ shop.name | escape }}" />
+         <meta itemprop="availability" content="{% if product.available %}InStock{% else %}OutOfStock{% endif %}" />
+         <meta itemprop="itemCondition" content="New" />
+         <span class="sold_out">{% if variant.available == false %}{{ settings.sold_out_text }}{% endif %}</span>
+         <span itemprop="price" content="{{ variant.price | money_without_currency }}" class="{% if variant.compare_at_price > variant.price %}sale {% endif %}base-price">
+            Starts at <span class="current_price">
+              {% if variant.available %}
+               	{{ variant.price | money }}
+              {% endif %}
+            </span>
+         </span>
+         <span class="was_price">
+          {% if variant.price < variant.compare_at_price %}
+            {{ variant.compare_at_price | money }}
+          {% endif %}
+         </span>
+      </p>
+      <p>
+      <span>{% if variant.compare_at_price_max > variant.price %}You save {{ variant.compare_at_price_max | minus: variant.price | times: 100.0 | divided_by: variant.compare_at_price_max | money_without_currency | times: 100 | remove: '.0'}}%{% endif %}</span>
+      </p>
+      <p class="affirm-as-low-as" data-page-type="product" data-amount="{{variant.price}}"></p>
+	   {% unless product.available %}
+      {% include 'product-notify-me' %}
+       {% endunless %}
+
+       {% if settings.product_description_position == "top" %}
+         {% if product.description != blank %}
+          <div class="description" itemprop="description">
+            {{ product.description | split: '<!-- split -->' | first }}
+          </div>
+        {% endif %}
+       {% endif %}
+
+       {% include 'product-form' with 'product' %}
+    </div>
+  </div>
+
+  <div class="description" itemprop="description">
+    <ul class="tabs2" style="padding-top: 20px;">
+      <li><a href="#tab-1">{{ settings.tab_1_title }}</a></li>
+      <li><a href="#tab-2">{{ pages.tab-2.title }}</a></li>
+      <li><a href="#tab-3">{{ pages.tab-3.title }}</a></li>
+      <li><a href="#tab-4">Reviews</a></li>
+    </ul>
+    <div id="tab-1" class="tab-content">
+      {{ product.description }}
+    </div>
+    <div id="tab-2" class="tab-content">
+    {{ pages.tab-2.content }}
+    </div>
+    <div id="tab-3" class="tab-content">
+    {{ pages.tab-3.content }}
+    </div>
+    <div id="tab-4" class="tab-content">
+   
+<!-- Stamped - Begin main-widget -->
+<div id="stamped-main-widget" class="stamped-main-widget" data-product-id="{{ product.id }}" data-name="{{ product.title | escape }}" data-url="{{ shop.url }}{{ product.url }}" data-image-url="{{ product.featured_image | product_img_url: "large" |replace: " ? ", " % 3F" | replace: "& "," % 26"}}" data-description="{{ product.description | escape }}" data-product-sku="{{product.handle}}" data-product-type="{{product.type}}"></div>
+<!-- Stamped - End main-widget -->
+ 
+    </div>
+    <!-- {{ product.description | split: '<!-- split -->' | first }} -->
+  </div>
+
+      {% if settings.display_collections or settings.display_tags or settings.display_type %}
+       <div class="meta">
+         {% if settings.display_collections %}
+           <p>
+             <span class="label">Collections:</span>
+             <span>
+              {% for col in product.collections %}
+                {% if col.handle != "all" %}
+                  <a href="{{ col.url }}" title="{{ col.title }}">{{ col.title }}</a>{% unless forloop.last %},{% endunless %}
+                {% endif %}
+              {% endfor %}
+            </span>
+          </p>
+         {% endif %}
+
+         {% if settings.display_tags %}
+            <p>
+              {% for tag in product.tags %}
+                {% if forloop.first %}
+                  <span class="label">Category:</span>
+                {% endif %}
+
+                {% unless tag contains 'meta-related-collection-' %}
+                  <span>
+                      <a href="/collections/{% if collection %}{{ collection.handle }}{% else %}all{% endif %}/{{ tag | handle }}" title="Products tagged {{ tag | escape}}">{{ tag }}</a>{% unless forloop.last %},{% endunless %}
+                  </span>
+                {% endunless %}
+              {% endfor %}
+            </p>
+         {% endif %}
+
+        {% if settings.display_type %}
+           <p>
+             <span class="label">Type:</span> <span itemprop="category">{{ product.type | link_to_type }}</span>
+           </p>
+        {% endif %}
+       </div>
+      {% endif %}
+
+      {% include "social-buttons" with "product" %}
+
+    {% if settings.product_images_position == 'right' %}
+      <div class="{% if settings.product_sidebar %}six{% else %}eight{% endif %} columns {% if product-images == blank %}{% if settings.product_images_position == 'left' %}alpha{% else %}omega{% endif %}{% endif %}">
+        {% include 'product-images' %}
+        {% include "social-buttons" with "product" %}
+      </div>
+    {% endif %}
+  </div>
+
+  {% if product.description contains "<!-- split -->"  %}
+    <br class="clear" />
+    <div class="section clearfix">
+      <div class="description">
+        {{ product.description | split: '<!-- split -->' | last }}
+      </div>
+    </div>
+  {% endif %}
+  </div>
+
+  {% if settings.display_related_products %}
+    {% capture limit %}{{ settings.products_per_row | plus: 1 }}{% endcapture %}
+
+    {% if collection and collection.all_products_count > 1 %}
+      {% assign col = collection.handle %}
+    {% else %}
+      {% assign col = product.collections.last.handle %}
+    {% endif %}
+
+    {% for tag in product.tags %}
+      {% if tag contains 'meta-related-collection-' %}
+        {% assign col = tag | remove: 'meta-related-collection-' %}
+        {% assign collection = collections[col] %}
+        {% capture limit %}{{ collection.products_count | plus: 1 }}{% endcapture %}
+      {% endif %}
+    {% endfor %}
+
+    {% if col and collections[col].all_products_count > 1 %}
+      <br class="clear" />
+      <h3 class="related-title"><span>{{ settings.related_products_title }}</span></h3>
+
+      {% assign skip_product = product %}
+      {% assign products = collections[col].products %}
+      {% assign products_per_row = settings.products_per_row %}
+      <div class="related-products flex wrap">
+        {% include 'product-loop' with settings.product_sidebar %}
+      </div>
+    {% endif %}
+  {% endif %}
+</div>
+
+      <!-- PERFECT AUDIENCE INTEGRATION START -->
+      {% include 'perfect-audience-product' %}
+      <!-- PERFECT AUDIENCE INTEGRATION END -->
+
+
+<script>
+  var selectCallback = function(variant, selector) {
+     
+    //Affirm Promos: Monthly Payment Messaging, dynamic pricing embed code
+    //
+    //NOTE: This Affirm embed code is only needed if you are using product variants.
+    //'selectCallback' might not be in your product.liquid template if product variants are not used or supported.
+    //If you are using product variants in your shop, use the following code to dynamically update your Monthly Payment Messaging when the customer selects a different product variant.
+    
+    $('.affirm-as-low-as').attr('data-amount',variant.price);
+    affirm.ui.refresh();
+     
+  };
+
+<style>
+ul.tabs {
+  border-bottom: 1px solid #DDDDDD;
+  display: block;
+  margin: 0 0 20px;
+  padding: 0;
+}
+ul.tabs li {
+  display: block;
+  float: left;
+  height: 30px;
+  margin-bottom: 0;
+  padding: 0;
+  width: auto;
+}
+ul.tabs li a {
+  -moz-border-bottom-colors: none;
+  -moz-border-image: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: none repeat scroll 0 0 #F5F5F5;
+  border-color: #DDDDDD !important;
+  border-style: solid;
+  border-width: 1px 1px 0 1px;
+  display: block;
+  font-size: 13px;
+  height: 29px;
+  line-height: 30px;
+  margin: 0;
+  padding: 0 20px;
+  text-decoration: none;
+  width: auto;
+  color: #303030;
+  border-bottom:none !important;
+}
+ul.tabs li a.active {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-left-width: 1px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  color: #111111;
+  height: 30px;
+  margin: 0 0 0 -1px;
+  padding-top: 4px;
+  position: relative;
+  top: -4px;
+}
+ul.tabs li:first-child a.active {
+  margin-left: 0;
+}
+ul.tabs li:first-child a {
+  border-top-left-radius: 2px;
+  border-width: 1px 1px 0;
+}
+ul.tabs li:last-child a {
+  border-top-right-radius: 2px;
+}
+ul.tabs:before, ul.tabs:after {
+  content: " ";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+}
+ul.tabs:after {
+  clear: both;
+}
+</style>
+
+
+  
+ 
+</script>
+
+
+<script>
+  $(document).ready(function() {
+    $('ul.tabs2').each(function(){
+      var active, content, links = $(this).find('a');
+      active = links.first().addClass('active');
+      content = $(active.attr('href'));
+      links.not(':first').each(function () {
+        $($(this).attr('href')).hide();
+      });
+      $(this).find('a').click(function(e){
+        active.removeClass('active');
+        content.hide();
+        active = $(this);
+        content = $($(this).attr('href'));
+        active.addClass('active');
+        content.show();
+        return false;
+      });
+    });
+  });
+</script>
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org/",
+    "@type": "Product",
+    "name": "{{ product.title | escape }}",
+    "url": "{{ shop.url }}{{ product.url }}",
+    {%- if product.featured_image -%}
+      {%- assign image_size = product.featured_image.width | append: 'x' -%}
+      "image": [
+        "https:{{ product.featured_image.src | img_url: image_size }}"
+      ],
+    {%- endif -%}
+    {%- if current_variant.sku != blank -%}
+      "sku": "{{ current_variant.sku }}",
+    {%- endif -%}
+    "brand": {
+      "@type": "Thing",
+      "name": "{{ product.vendor | escape }}"
+    },
+    "offers": [
+      {%- for variant in product.variants -%}
+        {
+          "@type" : "Offer",
+          {%- if variant.sku != blank -%}
+            "sku": "{{ variant.sku }}",
+          {%- endif -%}
+          "availability" : "http://schema.org/{% if variant.available %}InStock{% else %}OutOfStock{% endif %}",
+          "price" : "{{ variant.price | divided_by: 100.00 }}",
+          "priceCurrency" : "{{ cart.currency.iso_code }}",
+          "url" : "{{ shop.url }}{{ variant.url }}"
+        }{% unless forloop.last %},{% endunless %}
+      {%- endfor -%}
+    ],
+    "description": "{{ product.description | strip_html | escape }}"
+  }
+  </script>
+<script type="text/javascript">
+  var _learnq = _learnq || [];
+
+  var item = {
+    Name: {{ product.title|json }},
+    ProductID: {{ product.id|json }},
+    Categories: {{ product.collections|map:'title'|json }},
+    ImageURL: "https:{{ product.featured_image.src|img_url:'grande' }}",
+    URL: "{{ shop.secure_url }}{{ product.url }}",
+    Brand: {{ product.vendor|json }},
+    Price: {{ product.price|money|json }},
+    CompareAtPrice: {{ product.compare_at_price_max|money|json }}
+  };
+
+  _learnq.push(['track', 'Viewed Product', item]);
+  _learnq.push(['trackViewedItem', {
+    Title: item.Name,
+    ItemId: item.ProductID,
+    Categories: item.Categories,
+    ImageUrl: item.ImageURL,
+    Url: item.URL,
+    Metadata: {
+      Brand: item.Brand,
+      Price: item.Price,
+      CompareAtPrice: item.CompareAtPrice
+    }
+  }]);
+</script>
+<div id="aliexpress-review-wrapper-sp" style="float: left; clear: both; width: 100%" data-id="{{product.id}}" data-shop="le-papier-studio.myshopify.com" data-shopId="55337"></div>

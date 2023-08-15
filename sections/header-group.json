@@ -1,0 +1,38 @@
+{
+  "type": "header",
+  "name": "Header Group",
+  "sections": {
+    "announcement": {
+      "type": "announcement",
+      "settings": {
+        "home-page-only": false,
+        "background-color": "accent-1",
+        "light-text": false,
+        "text": "Free US shipping on orders $275 | Shop Now",
+        "link": "shopify:\/\/collections"
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "transparent-menu": false,
+        "background-color": "light",
+        "light-text": false,
+        "header-account-show": true,
+        "cart--icon": "bag",
+        "header-menu-center": true,
+        "menu": "2023-menu",
+        "show-region-selector": false,
+        "show-locale-selector": false,
+        "header-logo-center": true,
+        "logo": "shopify:\/\/shop_images\/Vana_Chupp_Primary_Black.png",
+        "logo-height": 60,
+        "mobile-logo-height": 30
+      }
+    }
+  },
+  "order": [
+    "announcement",
+    "header"
+  ]
+}

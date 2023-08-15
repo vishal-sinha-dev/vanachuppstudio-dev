@@ -1,0 +1,187 @@
+{%- liquid
+  assign settings_link = settings.color--alternative
+
+  render 'section-assets', name: 'featured-cta', type: 'style'
+-%}
+
+<div class="featured-cta--root" data-section-id="{{ section.id }}">
+  {%- liquid
+    assign text_color = section.settings.text-color
+    assign bg_color = section.settings.background-color
+    assign container_width = section.settings.container-width
+    assign description = section.settings.description
+    assign background_image = section.settings.background-image
+    assign button_text = section.settings.button-text
+    assign button_url = section.settings.button-url
+    assign button_action = section.settings.button-action
+    assign overline = section.settings.overline
+    assign spacing_above = section.settings.spacing-above
+    assign spacing_below = section.settings.spacing-below
+    assign title = section.settings.title
+  -%}
+
+  <div
+    class="featured-content--root"
+    data-container-width="{{ container_width }}"
+    data-spacing-above="{{ spacing_above }}"
+    data-spacing-below="{{ spacing_below }}"
+    data-text-color="{{ text_color }}"
+    data-background-color="{{ bg_color }}">
+
+    <div class="featured-cta-background">
+      {%- liquid
+        if image
+          render "image", image: background_image
+        endif
+      -%}
+    </div>
+
+    <div class="featured-cta--wrap">
+      <div class="featured-cta-text">
+        {%- if overline != blank -%}
+          <h2 class="featured-cta--overline" data-item="overline">
+            {{- overline | escape -}}
+          </h2>
+        {%- endif -%}
+
+        {%- if title != blank -%}
+          <h3 class="featured-cta--title" data-item="{{ heading_type }} {{ mobile_heading_type }}">
+            {{- title | escape -}}
+          </h3>
+        {%- endif -%}
+
+        {%- if description != blank -%}
+          <div class="featured-cta--description" data-item="rte-content">
+            {{- description -}}
+          </div>
+        {%- endif -%}
+      </div>
+
+      <div class="featured-cta-button">
+        {%- if button_text != blank -%}
+          <div class="featured-cta--button" data-item="button">
+            {% if button_url %}
+              <a class="featured-cta--link--container" href="{{ button_url }}">
+                {{- button_text -}}
+              </a>
+            {% elsif button_action %}
+              <a class="featured-cta--link--container" onclick="{{ button_action }}">
+                {{- button_text -}}
+              </a>
+            {% else %}
+              <a class="featured-cta--link--container">
+                {{- button_text -}}
+              </a>
+            {% endif %}
+
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Featured CTA",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Layout and Color"
+      },
+      {
+        "id": "text-color",
+        "label": "Text color",
+        "type": "select",
+        "options": [
+          {
+            "label": "Dark",
+            "value": "dark"
+          }, {
+            "label": "Light",
+            "value": "light"
+          }
+        ],
+        "default": "light"
+      },
+      {
+        "id": "background-color",
+        "label": "Background color",
+        "type": "select",
+        "options": [
+          {
+            "label": "Light",
+            "value": "light"
+          }, {
+            "label": "Dark",
+            "value": "dark"
+          }, {
+            "label": "Accent",
+            "value": "accent-1"
+          }
+        ],
+        "default": "dark"
+      },
+      {
+        "id": "container-width",
+        "label": "Maximum width of container",
+        "type": "range",
+        "min": 1,
+        "max": 6,
+        "step": 1,
+        "default": 6
+      }, {
+        "id": "spacing-above",
+        "label": "Spacing above",
+        "type": "checkbox",
+        "default": false
+      }, {
+        "id": "spacing-below",
+        "label": "Spacing below",
+        "type": "checkbox",
+        "default": false
+      }, {
+        "type": "header",
+        "content": "Content"
+      }, {
+        "id": "background-image",
+        "label": "Background Image",
+        "type": "image_picker"
+      }, {
+        "id": "overline",
+        "label": "Overline",
+        "type": "text",
+        "default": "Overline text"
+      }, {
+        "id": "title",
+        "label": "Heading",
+        "type": "text",
+        "default": "Image with text"
+      }, {
+        "id": "description",
+        "label": "Text",
+        "type": "richtext",
+        "default": "<p>Combine imagery with text to create stand-out campaign sections, eye-catching promotions, information blocks and more.</p>"
+      }, {
+        "id": "button-text",
+        "label": "Button text ",
+        "type": "text"
+      }, {
+        "id": "button-url",
+        "label": "Button Link",
+        "type": "url",
+        "info": "Entire block will become a link when no link text or description."
+      }, {
+        "id": "button-action",
+        "label": "Button Action",
+        "type": "text",
+        "info": "Custom button onclick action."
+      }
+    ],
+    "presets": [
+      {
+        "name": "Featured CTA"
+      }
+    ]
+  }
+{% endschema %}

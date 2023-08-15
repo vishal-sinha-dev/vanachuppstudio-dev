@@ -1,0 +1,203 @@
+{%- liquid
+  render 'section-assets', name: 'featured-columns', type: 'style'
+-%}
+
+<div class="featured-columns--root" data-section-id="{{ section.id }}">
+  {%- liquid
+    assign bg_color = section.settings.background-color
+    assign container_width = section.settings.container-width
+    assign spacing_above = section.settings.spacing-above
+    assign spacing_below = section.settings.spacing-below
+    assign title = section.settings.title
+    assign subtitle = section.settings.subtitle
+    assign columns = section.settings.columns
+    assign show_gap = section.settings.show-gap
+  -%}
+
+  <div
+    class="featured-content--root"
+    data-container-width="{{ container_width }}"
+    data-spacing-above="{{ spacing_above }}"
+    data-spacing-below="{{ spacing_below }}"
+    data-background-color="{{ bg_color }}">
+
+    {% if title != "" %}
+      <div class="featured-content--container featured-columns-title">
+        <h2>{{ title }}</h2>
+      </div>
+    {% endif %}
+
+    {% if subtitle != "" %}
+      <div class="featured-content--container featured-columns-subtitle">
+        <h6>{{ subtitle }}</h6>
+      </div>
+    {% endif %}
+
+    <div
+      class="featured-content--container featured-columns-container"
+      data-columns="{{ columns }}"
+      data-show-gap="{{ show_gap }}">
+      {% for block in section.blocks %}
+        {%- liquid
+          assign type = block.type
+          assign image = block.settings.image
+          assign image_description = block.settings.image-description
+          assign text = block.settings.text
+          assign padding = block.settings.padding
+        -%}
+
+        <div class="featured-columns-item" {% if type == "text" %}style="height: 100%;"{% endif %}>
+          {% if type == "image" %}
+            {%- liquid
+              if image
+                render "image", image: image
+              else
+                render "placeholder", type: "image"
+              endif
+            -%}
+
+            {% if image_description != "" %}
+              <div class="featured-columns--image-description">
+                <p>{{ image_description }}</p>
+              </div>
+            {% endif %}
+
+          {% elsif type == "text" %}
+            <div
+              class="featured-columns--description"
+              data-item="rte-content"
+              data-padding="{{ padding }}">
+              {{- text -}}
+            </div>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Featured Columns",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Layout and Color"
+      },
+      {
+        "id": "background-color",
+        "label": "Background color",
+        "type": "select",
+        "options": [
+          {
+            "label": "None",
+            "value": "none"
+          }, {
+            "label": "Light",
+            "value": "light"
+          }, {
+            "label": "Dark",
+            "value": "dark"
+          }, {
+            "label": "Accent",
+            "value": "accent-1"
+          }
+        ],
+        "default": "none"
+      },
+      {
+        "id": "container-width",
+        "label": "Maximum width of container",
+        "type": "range",
+        "min": 1,
+        "max": 6,
+        "step": 1,
+        "default": 6
+      },
+      {
+        "id": "spacing-above",
+        "label": "Spacing above",
+        "type": "checkbox",
+        "default": false
+      }, {
+        "id": "spacing-below",
+        "label": "Spacing below",
+        "type": "checkbox",
+        "default": false
+      }, {
+        "type": "header",
+        "content": "Content"
+      }, {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Add a title or tagline"
+      }, {
+        "type": "text",
+        "id": "subtitle",
+        "label": "SubTitle",
+        "default": "Add a title or tagline"
+      }, {
+        "type": "range",
+        "min": 1,
+        "max": 3,
+        "step": 1,
+        "id": "columns",
+        "label": "Columns",
+        "default": 2
+      }, {
+        "type": "checkbox",
+        "id": "show-gap",
+        "label": "Show Gap",
+        "default": true
+      }
+    ],
+    "blocks": [
+      {
+        "type": "image",
+        "name": "Image",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }, {
+            "type": "text",
+            "id": "image-description",
+            "label": "Image Description",
+            "default": "Explain a set of product features, add illustrations, infographics, logo lists, or link to pages."
+          }
+        ]
+      }, {
+        "type": "text",
+        "name": "Text",
+        "settings": [
+          {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text",
+            "default": "<p>Explain a set of product features, add illustrations, infographics, logo lists, or link to pages.</p>"
+          }, {
+            "type": "checkbox",
+            "id": "padding",
+            "label": "Space around text",
+            "default": false
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Featured Columns",
+        "blocks": [
+          {
+            "type": "image"
+          }, {
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

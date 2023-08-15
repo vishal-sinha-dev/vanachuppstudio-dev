@@ -1,0 +1,360 @@
+{
+  "sections": {
+    "0b027bb5-1402-4393-9183-173a33549eae": {
+      "type": "image-with-text",
+      "custom_css": [
+        ".featured-content--root {padding: 0;}"
+      ],
+      "settings": {
+        "text-color": "auto",
+        "background-color": "none",
+        "container-width": 6,
+        "spacing-above": false,
+        "spacing-below": false,
+        "image-aspect-ratio": 40,
+        "mobile-image-aspect-ratio": 44,
+        "darken-image": true,
+        "parallax-enabled": false,
+        "text-position": "center",
+        "text-width": "medium",
+        "overlap": false,
+        "box-around-text": false,
+        "mobile-overlay": false,
+        "image": "shopify:\/\/shop_images\/Header_Image.png",
+        "overline": "",
+        "title": "",
+        "description": "",
+        "link-url": "",
+        "link-text": "",
+        "cta1-text": "",
+        "cta1-link": "",
+        "cta2-text": "",
+        "cta2-link": ""
+      }
+    },
+    "2b278f3a-44e7-489b-a362-8739cf852742": {
+      "type": "featured-text",
+      "custom_css": [
+        "p {font-family: Montserrat; font-size: 28px; font-weight: bold;}",
+        "@media only screen and (max-width: 767px) {p {font-size: 16px; }}"
+      ],
+      "settings": {
+        "background-color": "dark",
+        "light-text": true,
+        "container-width": 2,
+        "spacing-above": true,
+        "spacing-below": true,
+        "overline": "",
+        "heading": "",
+        "text": "<p>Vana Chupp Studio keeps memories close through <a href=\"\/collections\/silhouette-jewelry\" target=\"_blank\" title=\"Silhouette Jewelry\">customized silhouette<\/a> jewelry of the highest quality. <\/p><p>Your personal photos are transformed into long-lasting heirloom jewelry pieces that honor the people, pets, and special moments in your life.<\/p>"
+      }
+    },
+    "75eaabc3-47b5-4757-8339-55b2192e3e6a": {
+      "type": "image-with-text",
+      "disabled": true,
+      "custom_css": [
+        ".image-with-text--root {background: #98acc9;}",
+        "a {color: #fff;}",
+        ".featured-content--text {background-color: transparent; color: #fff;}",
+        "@media only screen and (min-width: 768px) {.image-with-text--root img {width: 100%; height: 450px; object-fit: contain; top: 50%; transform: translate(0, -50%); } .image-with-text--root {padding: 50px; }}",
+        "@media only screen and (max-width: 767px) {.image-with-text--root img {width: 100%; height: 400px; object-fit: contain; }}",
+        "p {font-family: \"Montserrat\"; font-size: 1.35rem; line-height: 35px; font-weight: 500;}"
+      ],
+      "settings": {
+        "text-color": "auto",
+        "background-color": "accent-1",
+        "container-width": 3,
+        "spacing-above": true,
+        "spacing-below": true,
+        "image-aspect-ratio": 102,
+        "mobile-image-aspect-ratio": 126,
+        "darken-image": false,
+        "parallax-enabled": false,
+        "text-position": "right",
+        "text-width": "large",
+        "overlap": false,
+        "box-around-text": true,
+        "mobile-overlay": false,
+        "image": "shopify:\/\/shop_images\/Vana_Chupp_Oval_Cream.png",
+        "overline": "",
+        "title": "",
+        "description": "<p>Vana Chupp Studio keeps memories close through <a href=\"\/collections\/silhouette-jewelry\" target=\"_blank\" title=\"Silhouette Jewelry\">customized silhouette<\/a> jewelry of the highest quality. <\/p><p>Your personal photos are transformed into long-lasting heirloom jewelry pieces that honor the people, pets, and special moments in your life.<\/p>",
+        "link-url": "",
+        "link-text": "",
+        "cta1-text": "",
+        "cta1-link": "",
+        "cta2-text": "",
+        "cta2-link": ""
+      }
+    },
+    "featured-collection-grid": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".featured-collection--title {font-size: 2rem;}",
+        ".carousel--root[data-spacing-around-blocks=\"true\"] .carousel--block {padding: 25px;}"
+      ],
+      "settings": {
+        "collection": "vanas-favorites",
+        "max-products": 8,
+        "background-color": "none",
+        "light-text": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "featured-collection--image--show": false,
+        "featured-collection--description--show": false,
+        "display-type": "slideshow",
+        "products-per-row--desktop": "4",
+        "products-per-row--mobile": "1"
+      }
+    },
+    "59f37b57-914c-46b9-87f1-a5093741e2b2": {
+      "type": "image-with-text",
+      "custom_css": [
+        ".image-with-text--root {background: url(\"https:\/\/cdn.shopify.com\/s\/files\/1\/0754\/6053\/files\/Jewelry.png\") no-repeat center center; background-size: cover;}",
+        "@media only screen and (min-width: 768px) {.image-with-text--root {padding: 100px; } h1 {font-size: 3rem; } h2 {font-size: 2.75rem; }}",
+        ".featured-content--image {display: none;}",
+        ".featured-content--container {justify-content: flex-end;}",
+        "[data-background-color=\"none\"] {background: none;}",
+        "h1,h2 {font-weight: 500;}",
+        ".featured-content--text {max-width: 750px;}"
+      ],
+      "settings": {
+        "text-color": "auto",
+        "background-color": "none",
+        "container-width": 6,
+        "spacing-above": false,
+        "spacing-below": false,
+        "image-aspect-ratio": 56,
+        "mobile-image-aspect-ratio": 64,
+        "darken-image": true,
+        "parallax-enabled": false,
+        "text-position": "right",
+        "text-width": "large",
+        "overlap": false,
+        "box-around-text": false,
+        "mobile-overlay": false,
+        "overline": "",
+        "title": "",
+        "description": "<h1>Vana Chupp Studio<\/h1><p><em>is a boutique lifestyle brand that transforms our customers’ most treasured people and moments into exquisite heirloom jewelry and personal accessories. Vana Chupp founded the company as Le Papier Studio in 2008 as a creative expression of her passion for classic silhouette art inspired by her highest calling, motherhood.<\/em><\/p><h2>What We're Know For<\/h2><p>Taking your favorite photographs of family, pets, or moments in time, we fashion those images into silhouette portraits, exquisite silhouette jewelry, and personal accessories that become treasured family heirlooms. As she has done from the beginning, Vana continues to directly consult with clients to ensure pieces perfectly evoke those forever memories.<\/p><h2>What We Believe<\/h2><p>We know from our own experiences that our little ones grow up entirely too quickly. Our mission is to inspire parents to find joy in even the most seemingly mundane moments, to mentally pause from the distractions and demands of our hectic world in order to live in the present, and to cherish the precious gift of time.<\/p>",
+        "link-url": "",
+        "link-text": "",
+        "cta1-text": "",
+        "cta1-link": "",
+        "cta2-text": "",
+        "cta2-link": ""
+      }
+    },
+    "aef4886b-098f-4b2f-8510-9f374eca1aa8": {
+      "type": "featured-collections",
+      "custom_css": [
+        "@media only screen and (max-width: 767px) {h3 {font-size: 16px; } .featured-collections--title {min-height: 55px; }}"
+      ],
+      "settings": {
+        "heading": "Our Collections",
+        "collection-list": [
+          "best-sellers",
+          "jewelry",
+          "silhouette-ornaments",
+          "print-paper",
+          "gift-certificates",
+          "add-on-products-services",
+          "last-minute-gifts",
+          "jewelry-accessories"
+        ],
+        "aspect-ratio": "square",
+        "image-type": "product",
+        "background-color": "none",
+        "light-text": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "width": 3,
+        "mobile-width": "2"
+      }
+    },
+    "featured-blog": {
+      "type": "featured-blog",
+      "custom_css": [
+        "h2 {font-size: 2rem; margin-bottom: 2rem;}",
+        "h3,a,[data-item=\"light-accent-text\"] {color: #000;}",
+        "[data-item=\"block-link\"] > :after {border-color: #000;}",
+        ".article--item--excerpt {color: #000;}"
+      ],
+      "settings": {
+        "aspect-ratio": "landscape",
+        "background-color": "light",
+        "light-text": false,
+        "container-width": 4,
+        "spacing-above": true,
+        "spacing-below": true,
+        "blog-heading": "VCS Journal",
+        "blog": "blog",
+        "tag-select": "pinned",
+        "show-date": false,
+        "show-excerpt": true,
+        "view-more-text": "All Blogs"
+      }
+    },
+    "796ac717-a599-4e94-b46e-16cfcf760bee": {
+      "type": "slideshow",
+      "disabled": true,
+      "blocks": {
+        "template--18592835207465__796ac717-a599-4e94-b46e-16cfcf760bee-16861029270a28b589-0": {
+          "type": "image",
+          "settings": {
+            "text-position": "center",
+            "text-width": "large",
+            "overline": "",
+            "title": "Reviews",
+            "description": "<p>I’ve been getting questions about the necklaces I’ve been wearing lately. I’m obsessed…It’s silhouette necklaces with Cal and Ollie’s profile pics!<\/p><p>@dylandreyernbc<\/p>",
+            "link-url": "\/",
+            "link-text": ""
+          }
+        },
+        "05b114a3-b5fc-431a-84d2-c576b15c2ad4": {
+          "type": "image",
+          "settings": {
+            "text-position": "center",
+            "text-width": "large",
+            "overline": "",
+            "title": "Reviews",
+            "description": "<p>I’ve been getting questions about the necklaces I’ve been wearing lately. I’m obsessed…It’s silhouette necklaces with Cal and Ollie’s profile pics!<\/p><p>@dylandreyernbc<\/p>",
+            "link-url": "\/",
+            "link-text": ""
+          }
+        },
+        "192d0fd5-56af-4a08-9a13-4ae5166e6d5e": {
+          "type": "image",
+          "settings": {
+            "text-position": "center",
+            "text-width": "large",
+            "overline": "",
+            "title": "Reviews",
+            "description": "<p>I’ve been getting questions about the necklaces I’ve been wearing lately. I’m obsessed…It’s silhouette necklaces with Cal and Ollie’s profile pics!<\/p><p>@dylandreyernbc<\/p>",
+            "link-url": "\/",
+            "link-text": ""
+          }
+        },
+        "7e7f3717-2591-4449-9c91-1dca4ce2e1df": {
+          "type": "image",
+          "settings": {
+            "text-position": "center",
+            "text-width": "large",
+            "overline": "",
+            "title": "Reviews",
+            "description": "<p>I’ve been getting questions about the necklaces I’ve been wearing lately. I’m obsessed…It’s silhouette necklaces with Cal and Ollie’s profile pics!<\/p><p>@dylandreyernbc<\/p>",
+            "link-url": "\/",
+            "link-text": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18592835207465__796ac717-a599-4e94-b46e-16cfcf760bee-16861029270a28b589-0",
+        "05b114a3-b5fc-431a-84d2-c576b15c2ad4",
+        "192d0fd5-56af-4a08-9a13-4ae5166e6d5e",
+        "7e7f3717-2591-4449-9c91-1dca4ce2e1df"
+      ],
+      "custom_css": [
+        "h3 {font-size: 3.5rem;}",
+        "p {font-size: 2.5rem; line-height: 50px;}",
+        ".featured-content--image {display: none;}",
+        "[data-section-id]:not([data-container]) > :not([data-container=\"block\"]),.featured-content--root[data-cover-image=\"false\"][data-text-position=\"center\"] .featured-content--container {background: transparent linear-gradient(180deg, #eee7dd 0%, #eee7dd00 100%) 0% 0% no-repeat;}"
+      ],
+      "settings": {
+        "text-color": "dark",
+        "background-color": "none",
+        "spacing-above": true,
+        "spacing-below": true,
+        "spacing-around-blocks": true,
+        "image-aspect-ratio": 56,
+        "darken-image": false,
+        "blocks_per_slide": 1,
+        "box-around-text": false,
+        "auto-rotate": false,
+        "rotate-frequency": 7,
+        "transition_type": "slide",
+        "mobile-image-aspect-ratio": 134,
+        "blocks_per_slide_mobile": "1",
+        "mobile-overlay": false,
+        "title": "Add a title or tagline"
+      }
+    },
+    "54823ba1-ac6d-4ef0-a9ee-9c6e7fb029a8": {
+      "type": "testimonials",
+      "blocks": {
+        "template--19399768899881__54823ba1-ac6d-4ef0-a9ee-9c6e7fb029a8-168752993504783d94-0": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Dylan_Dreyer_376x376_crop_center_jpg.webp",
+            "icon": "none",
+            "author-role": "",
+            "author-name": "@DYLANDREYERNBC",
+            "description": "<p>“I’ve been getting questions about the necklaces I’ve been wearing lately. I’m obsessed…It’s silhouette necklaces with Cal and Ollie’s profile pics!\"<\/p>"
+          }
+        },
+        "template--19399768899881__54823ba1-ac6d-4ef0-a9ee-9c6e7fb029a8-168752993504783d94-1": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2021-05-14_at_7.19.37_PM_376x376_crop_center_e87adf9c-ae06-428e-a0ae-f2881a9a7f6d.webp",
+            "icon": "none",
+            "author-role": "",
+            "author-name": "@RACHELBROSNAHAN",
+            "description": "<p>“Mother of Dogs. Forever and ever! Thank you VCS for this amazing heirloom!”<\/p>"
+          }
+        },
+        "template--19399768899881__54823ba1-ac6d-4ef0-a9ee-9c6e7fb029a8-168752993504783d94-2": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2018-02-23_at_9.30.27_AM_550x550_crop_center_376x376_crop_center_aa075964-5058-49f0-ace1-15d9f2c2273a.webp",
+            "icon": "none",
+            "author-role": "",
+            "author-name": "@MEGLUXE",
+            "description": "<p>“My absolute favorite ornament this year is this gorgeous keepsake of Alden’s silhouette by Vana Chupp Studio!”<\/p>"
+          }
+        },
+        "template--19399768899881__54823ba1-ac6d-4ef0-a9ee-9c6e7fb029a8-168752993504783d94-3": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2018-02-23_at_9.50.54_AM_550x550_crop_center_376x376_crop_center_5fd196e4-beea-468f-8911-5f624483d981.webp",
+            "icon": "none",
+            "author-role": "",
+            "author-name": "@WHHOSTESS",
+            "description": "<p>“My silhouette necklace from VCS has become a cherished piece and in daily rotation. Adding a second charm on for Patrick makes it even sweeter!”<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19399768899881__54823ba1-ac6d-4ef0-a9ee-9c6e7fb029a8-168752993504783d94-0",
+        "template--19399768899881__54823ba1-ac6d-4ef0-a9ee-9c6e7fb029a8-168752993504783d94-1",
+        "template--19399768899881__54823ba1-ac6d-4ef0-a9ee-9c6e7fb029a8-168752993504783d94-2",
+        "template--19399768899881__54823ba1-ac6d-4ef0-a9ee-9c6e7fb029a8-168752993504783d94-3"
+      ],
+      "custom_css": [
+        ".testimonials--name {font-family: Crimson-text; font-size: 13px;}",
+        ".tes .testimonials--description {font-family: Crimson-text; font-size: 24px;}",
+        ".testimonials--info {background: transparent;}"
+      ],
+      "settings": {
+        "overline": "",
+        "heading": "Reviews",
+        "image-shape": "square",
+        "background-color": "light",
+        "light-text": false,
+        "container-width": 5,
+        "spacing-above": true,
+        "spacing-below": true,
+        "mobile-width": "1"
+      }
+    }
+  },
+  "order": [
+    "0b027bb5-1402-4393-9183-173a33549eae",
+    "2b278f3a-44e7-489b-a362-8739cf852742",
+    "75eaabc3-47b5-4757-8339-55b2192e3e6a",
+    "featured-collection-grid",
+    "59f37b57-914c-46b9-87f1-a5093741e2b2",
+    "aef4886b-098f-4b2f-8510-9f374eca1aa8",
+    "featured-blog",
+    "796ac717-a599-4e94-b46e-16cfcf760bee",
+    "54823ba1-ac6d-4ef0-a9ee-9c6e7fb029a8"
+  ]
+}
