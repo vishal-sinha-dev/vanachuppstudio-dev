@@ -2,6 +2,11 @@
   "sections": {
     "16324732604d3e7054": {
       "type": "image-with-text",
+      "custom_css": [
+        "h3 {margin-top: 25px;}",
+        ".featured-content--description {margin-bottom: 25px;}",
+        ".image--root{object-fit:cover;}"
+      ],
       "settings": {
         "text-color": "auto",
         "background-color": "accent-1",

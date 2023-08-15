@@ -32,7 +32,7 @@
     "collection-header": {
       "type": "collection--header",
       "custom_css": [
-        "h1 {font-size: 2rem;}"
+        "h1 {font-size: 1.3rem;}"
       ],
       "settings": {
         "enable-header": true,
