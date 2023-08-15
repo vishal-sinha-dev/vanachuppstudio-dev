@@ -11,7 +11,7 @@
     "typography--heading--uppercase": true,
     "typography--heading--size": "large",
     "typography--accent": "montserrat_n4",
-    "typography--paragraph": "avenir_next_n4",
+    "typography--paragraph": "crimson_text_n4",
     "typography--paragraph--size": "large",
     "product--image-size": "natural",
     "product--hover-image-enabled": true,
@@ -43,6 +43,36 @@
     "social--pinterest--url": "https:\/\/pinterest.com\/shopify",
     "social--twitter--url": "https:\/\/twitter.com\/shopify",
     "social--tiktok--url": "https:\/\/tiktok.com\/@shopify",
+    "sections": {
+      "contact": {
+        "type": "contact",
+        "blocks": {
+          "240b5905-893d-4af2-840d-6d509912b973": {
+            "type": "radio",
+            "settings": {
+              "title": "School Donation"
+            }
+          },
+          "f6dbf9b3-e43b-4c8b-9529-a5e46276c856": {
+            "type": "radio",
+            "settings": {
+              "title": "Non-Profit Donation"
+            }
+          }
+        },
+        "block_order": [
+          "240b5905-893d-4af2-840d-6d509912b973",
+          "f6dbf9b3-e43b-4c8b-9529-a5e46276c856"
+        ],
+        "custom_css": [
+
+        ],
+        "settings": {
+          "heading": "",
+          "message": ""
+        }
+      }
+    },
     "content_for_index": [
 
     ]
@@ -183,5 +213,12 @@
       "cart--type": "drawer",
       "cart--show-note": true
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      ".header--mobile--cart {display: flex; align-items: center; justify-content: flex-end;}",
+      ".header--mobile--cart .swym-wishlist {width: 18px; height: 21px; font-size: 18px;}",
+      "@media only screen and (max-width: 767px) {[data-item=\"rte-content\"] > :not(blockquote) {padding-bottom: 15px; }}"
+    ]
   }
 }

@@ -1,0 +1,243 @@
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "disabled": true,
+      "settings": {
+        "show-title": true,
+        "background-color": "none",
+        "light-text": false,
+        "container-width": 4,
+        "spacing-above": true,
+        "spacing-below": true
+      }
+    },
+    "7f0802aa-7b23-49a4-9fd6-13ab4417c769": {
+      "type": "featured-text",
+      "settings": {
+        "background-color": "none",
+        "light-text": false,
+        "container-width": 3,
+        "spacing-above": true,
+        "spacing-below": false,
+        "overline": "",
+        "heading": "{{ page.title }}",
+        "text": "<p><\/p><p>Supporting and giving back to our community has been at the core of our existence since our beginning in 2008. As a brand, we are honored to work with some of the most incredible organizations and individuals to support causes that are close to our heart.<\/p>"
+      }
+    },
+    "d1d2128f-fc98-4e44-b109-d21395f8e770": {
+      "type": "image-with-text",
+      "custom_css": [
+        ".image--root img {object-fit: contain;}"
+      ],
+      "settings": {
+        "text-color": "auto",
+        "background-color": "none",
+        "container-width": 2,
+        "spacing-above": false,
+        "spacing-below": false,
+        "image-aspect-ratio": 42,
+        "mobile-image-aspect-ratio": 52,
+        "darken-image": false,
+        "parallax-enabled": false,
+        "text-position": "center",
+        "text-width": "medium",
+        "overlap": false,
+        "box-around-text": false,
+        "mobile-overlay": true,
+        "image": "shopify:\/\/shop_images\/Giving_Back_1024x1024_50dc950e-0bab-4728-8df7-0cb155d7862c.png",
+        "overline": "",
+        "title": "",
+        "description": "",
+        "link-url": "",
+        "link-text": "",
+        "cta1-text": "",
+        "cta1-link": "",
+        "cta2-text": "",
+        "cta2-link": ""
+      }
+    },
+    "8f45235c-dd3f-41c3-894d-d28eafb75191": {
+      "type": "featured-text",
+      "custom_css": [
+        ".featured-text--heading {font-size: 1.5rem; color: #98acc9; font-style: italic;}"
+      ],
+      "settings": {
+        "background-color": "none",
+        "light-text": false,
+        "container-width": 4,
+        "spacing-above": true,
+        "spacing-below": false,
+        "overline": "",
+        "heading": "A Few of our Favorite Causes...",
+        "text": ""
+      }
+    },
+    "870069ef-b5a1-473e-a2d9-763bedee4619": {
+      "type": "image-with-text",
+      "custom_css": [
+        ".image--root img {object-fit: contain;}"
+      ],
+      "settings": {
+        "text-color": "auto",
+        "background-color": "none",
+        "container-width": 3,
+        "spacing-above": false,
+        "spacing-below": false,
+        "image-aspect-ratio": 124,
+        "mobile-image-aspect-ratio": 110,
+        "darken-image": false,
+        "parallax-enabled": false,
+        "text-position": "left",
+        "text-width": "medium",
+        "overlap": false,
+        "box-around-text": false,
+        "mobile-overlay": false,
+        "image": "shopify:\/\/shop_images\/Alex_s_lemonade_stand.png",
+        "overline": "",
+        "title": "Alex's Lemonade Stand",
+        "description": "<p>September is Childhood Cancer Awareness Month and in the past few years we've partnered with Entrepreneur and mama Danielle Moss whose young daughter was diagnosed with Leukemia, to raise funds for Alex's Lemonade Stand's - an incredible orginiation that funds childhood cancer research and supports families going through treatment. Together with your help, we rasied almost $3k.<\/p>",
+        "link-url": "",
+        "link-text": "",
+        "cta1-text": "",
+        "cta1-link": "",
+        "cta2-text": "",
+        "cta2-link": ""
+      }
+    },
+    "c4ba96ed-f2f0-41cb-ab91-6d8bb02e4a34": {
+      "type": "image-with-text",
+      "custom_css": [
+        ".image--root img {object-fit: contain;}"
+      ],
+      "settings": {
+        "text-color": "auto",
+        "background-color": "none",
+        "container-width": 3,
+        "spacing-above": false,
+        "spacing-below": false,
+        "image-aspect-ratio": 56,
+        "mobile-image-aspect-ratio": 56,
+        "darken-image": false,
+        "parallax-enabled": false,
+        "text-position": "right",
+        "text-width": "medium",
+        "overlap": false,
+        "box-around-text": false,
+        "mobile-overlay": false,
+        "image": "shopify:\/\/shop_images\/Bauble_Stockings.png",
+        "overline": "",
+        "title": "Bauble Stockings",
+        "description": "<p>Van Chupp & Bauble Stockings partnership features a collection of holldiay theme stockings, \"Celebration Silhouettes\" designed with life's special moments in mind.<\/p><p>We are donating 10% of profits of theses stockings to Alex's Lemonade which raises funds for impactful research to help cure childhood cancer. <\/p>",
+        "link-url": "",
+        "link-text": "",
+        "cta1-text": "",
+        "cta1-link": "",
+        "cta2-text": "",
+        "cta2-link": ""
+      }
+    },
+    "d89aebae-9d34-4cbd-a7bb-b5de2582a4ce": {
+      "type": "image-with-text",
+      "custom_css": [
+        ".image--root img {object-fit: contain;}"
+      ],
+      "settings": {
+        "text-color": "auto",
+        "background-color": "none",
+        "container-width": 3,
+        "spacing-above": true,
+        "spacing-below": false,
+        "image-aspect-ratio": 84,
+        "mobile-image-aspect-ratio": 110,
+        "darken-image": false,
+        "parallax-enabled": false,
+        "text-position": "left",
+        "text-width": "medium",
+        "overlap": false,
+        "box-around-text": false,
+        "mobile-overlay": false,
+        "image": "shopify:\/\/shop_images\/world_central_kitchen.png",
+        "overline": "",
+        "title": "World Central Kitchen",
+        "description": "<p>The sunflower is Ukraine's national flower and displaying it is one of the many ways the world is showing solidarity for Ukraine. We are incredibly moved by the resilience and strength of the Ukrainian people and wanted to find a way to help. To show our support we created The Sunflower Charm. We are committed to donating 20% of the sales from this charm to World Central Kitchen, who are serving thousands of fresh meals to Ukrainian families fleeing their homes. as well as to those who are remaining in Ukraine.<\/p>",
+        "link-url": "",
+        "link-text": "",
+        "cta1-text": "",
+        "cta1-link": "",
+        "cta2-text": "",
+        "cta2-link": ""
+      }
+    },
+    "59f02ee1-a58b-4dca-97a8-d7143c1cab8f": {
+      "type": "featured-text",
+      "settings": {
+        "background-color": "none",
+        "light-text": false,
+        "container-width": 2,
+        "spacing-above": true,
+        "spacing-below": false,
+        "overline": "",
+        "heading": "",
+        "text": "<p><strong>We love partnering with and supporting non-profit orginizations that have children and tehir parents at the core of their work.<\/strong><\/p>"
+      }
+    },
+    "f10c6c93-98ea-41ca-b1b7-f4d3ae8fb71c": {
+      "type": "image-with-text",
+      "custom_css": [
+        ".image--root img {object-fit: contain;}"
+      ],
+      "settings": {
+        "text-color": "auto",
+        "background-color": "none",
+        "container-width": 3,
+        "spacing-above": false,
+        "spacing-below": false,
+        "image-aspect-ratio": 28,
+        "mobile-image-aspect-ratio": 32,
+        "darken-image": false,
+        "parallax-enabled": false,
+        "text-position": "center",
+        "text-width": "medium",
+        "overlap": false,
+        "box-around-text": false,
+        "mobile-overlay": false,
+        "image": "shopify:\/\/shop_images\/Giving_Back_2048x2048_1d8ff1d6-7e2e-4659-b814-943809bd431c.png",
+        "overline": "",
+        "title": "",
+        "description": "",
+        "link-url": "",
+        "link-text": "",
+        "cta1-text": "",
+        "cta1-link": "",
+        "cta2-text": "",
+        "cta2-link": ""
+      }
+    },
+    "4e69dfdb-bac7-4af4-8bec-b9fb64c0bb81": {
+      "type": "featured-text",
+      "settings": {
+        "background-color": "none",
+        "light-text": false,
+        "container-width": 2,
+        "spacing-above": false,
+        "spacing-below": true,
+        "overline": "",
+        "heading": "",
+        "text": "<p>To be considered for a partnership or donations from our company, please fill out <a href=\"https:\/\/vanachuppstudio.com\/pages\/contact\" target=\"_blank\">this form<\/a>. At the moment we can only accept donation inquiries from schools and non-profits in Richmond, VA + 30 miles outside city limits. To be considered, please reach out no less than 4 weeks prior to your event date. If your request is approved, we will reach out to coordinate details. <\/p>"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "7f0802aa-7b23-49a4-9fd6-13ab4417c769",
+    "d1d2128f-fc98-4e44-b109-d21395f8e770",
+    "8f45235c-dd3f-41c3-894d-d28eafb75191",
+    "870069ef-b5a1-473e-a2d9-763bedee4619",
+    "c4ba96ed-f2f0-41cb-ab91-6d8bb02e4a34",
+    "d89aebae-9d34-4cbd-a7bb-b5de2582a4ce",
+    "59f02ee1-a58b-4dca-97a8-d7143c1cab8f",
+    "f10c6c93-98ea-41ca-b1b7-f4d3ae8fb71c",
+    "4e69dfdb-bac7-4af4-8bec-b9fb64c0bb81"
+  ]
+}

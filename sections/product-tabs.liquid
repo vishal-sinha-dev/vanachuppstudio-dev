@@ -3,7 +3,7 @@
   render 'section-assets', name: 'product-tabs', type: 'script'
 -%}
 
-<div class="product-tabs--root" data-section-id="{{ section.id }}">
+<div class="product-tabs--root">
   {%- liquid
     assign container_width = section.settings.container-width
     assign spacing_above = section.settings.spacing-above
@@ -17,79 +17,73 @@
     data-spacing-above="{{ spacing_above }}"
     data-spacing-below="{{ spacing_below }}">
 
-    <div class="featured-content--container">
+    {% assign apps = "" | split: "|" %}
+    {% for block in section.blocks %}
+      {% if block.type == "@app" %}
+        {% assign apps = apps | append: block %}
+      {% endif %}
+    {% endfor %}
+    {% assign appsSize = apps | size %}
 
-      <div class="product-tabs--wrap">
+    <div class="product-tabs--header-wrap">
+      {% for block in section.blocks %}
+        {%- case block.type -%}
+          {%- when 'description' -%}
+          <div class="product-tabs--header">
+            {{- block.settings.label -}}
+          </div>
 
-        {% assign apps = "" | split: "|" %}
-        {% for block in section.blocks %}
-          {% if block.type == "@app" %}
-            {% assign apps = apps | append: block %}
-          {% endif %}
-        {% endfor %}
-        {% assign appsSize = apps | size %}
+          {%- when 'content' -%}
+          <div class="product-tabs--header">
+            {{- block.settings.label -}}
+          </div>
 
-        <div class="product-tabs--header-wrap">
-          {% for block in section.blocks %}
-            {%- case block.type -%}
-              {%- when 'description' -%}
-              <div class="product-tabs--header">
-                {{- block.settings.label -}}
-              </div>
+          {%- when 'liquid' -%}
+          <div class="product-tabs--header">
+            {{- block.settings.label -}}
+          </div>
 
-              {%- when 'content' -%}
-              <div class="product-tabs--header">
-                {{- block.settings.label -}}
-              </div>
+        {%- endcase -%}
+      {% endfor %}
 
-              {%- when 'liquid' -%}
-              <div class="product-tabs--header">
-                {{- block.settings.label -}}
-              </div>
-
-            {%- endcase -%}
-          {% endfor %}
-
-          {% if appsSize > 0 %}
-            <div class="product-tabs--header">
-              {{- app_block_label -}}
-            </div>
-          {% endif %}
+      {% if appsSize > 0 %}
+        <div class="product-tabs--header">
+          {{- app_block_label -}}
         </div>
+      {% endif %}
+    </div>
 
-        <div class="product-tabs--body-wrap">
+    <div class="product-tabs--body-wrap">
+      {% for block in section.blocks %}
+        {%- case block.type -%}
+          {%- when 'description' -%}
+          <div class="product-tabs--body" data-item="rte-content">
+            {{- product.description -}}
+          </div>
+
+          {%- when 'content' -%}
+          <div class="product-tabs--body" data-item="rte-content">
+            {{- block.settings.content -}}
+          </div>
+
+          {%- when 'liquid' -%}
+          <div class="product-tabs--body">
+            {{- block.settings.custom-liquid -}}
+          </div>
+
+        {%- endcase -%}
+      {% endfor %}
+
+      {% if appsSize > 0 %}
+        <div class="product-tabs--body">
           {% for block in section.blocks %}
-            {%- case block.type -%}
-              {%- when 'description' -%}
-              <div class="product-tabs--body" data-item="rte-content">
-                {{- product.description -}}
-              </div>
-
-              {%- when 'content' -%}
-              <div class="product-tabs--body" data-item="rte-content">
-                {{- block.settings.content -}}
-              </div>
-
-              {%- when 'liquid' -%}
-              <div class="product-tabs--body">
-                {{- block.settings.custom-liquid -}}
-              </div>
-
-            {%- endcase -%}
+            {% if block.type == "@app" %}
+              {%- render block -%}
+            {% endif %}
           {% endfor %}
-
-          {% if appsSize > 0 %}
-            <div class="product-tabs--body">
-              {% for block in section.blocks %}
-                {% if block.type == "@app" %}
-                  {%- render block -%}
-                {% endif %}
-              {% endfor %}
-            </div>
-          {% endif %}
-
         </div>
-      </div>
+      {% endif %}
+
     </div>
   </div>
 </div>

@@ -55,6 +55,7 @@
         },
         "social-sharing": {
           "type": "social-sharing",
+          "disabled": true,
           "settings": {
             "facebook-enabled": true,
             "twitter-enabled": true,
@@ -76,7 +77,11 @@
         "social-sharing"
       ],
       "custom_css": [
-        "h3 {font-weight: bold;}"
+        ".swym-button-bar {border: none;}",
+        ".product-buy-buttons--cta {color: white; background-color: var(--bg-color--dark);}",
+        ".disclaimer h5 {text-align: center; font-size: 12px; font-weight: bold; color: var(--bg-color--dark);}",
+        ".disclaimer p {text-align: center; font-size: 12px; line-height: 20px; color: var(--bg-color--dark);}",
+        "h1 {font-size: 25px;}"
       ],
       "settings": {
         "container-width": 4,
@@ -112,19 +117,43 @@
           "type": "content",
           "settings": {
             "label": "Customize + Photo Tips",
-            "content": "<p>Custom Product Details.<\/p>"
+            "content": "<p>If you have any questions about the Process of ordering any of our piece or to read tips on taking perfect photos for silhouettes, please read our  <a href=\"https:\/\/le-papier-studio.myshopify.com\/pages\/our-process\" target=\"_blank\">HOW TO ORDER  <\/a>page.<\/p><p>To customize any of our products, start by filling out the order form above. For silhouette portraits, select the color of your silhouette\/s, size, framing (optional), orientation and personalization (name or any other text you may want underneath the silhouette\/s). For our silhouette jewelry, make select the metal, number of charms for your piece and upload your photos right on the order form.<\/p><p>Your custom silhouette\/s will be done in a style similar to the examples shown here. Any special requests for details to include will be considered. Please allow for the artist to have a level of artistic license and professional discretion in creating this piece.<\/p><p>Where applicable, double check your text and enter it carefully. Exact line breaks and text layouts are decided by the artist during crafting. We do not automatically send proofs for non-custom silhouette products. To be sure your product looks right, we recommend you purchase a proof with it.<\/p><p><strong>Photo Tips for Perfect Silhouettes<br\/><\/strong><\/p><ul><li>Place subject in front of a well-lit background, facing either left or right.<\/li><li>Only one side of the face must show on the photo and entire head should be in the photo.<\/li><li>A relaxed face helps to show the features (eyelashes, nose, lips) more realistically although smiling faces are cute too. It's up to you how you want to photograph them.<\/li><li>Pictures taken with a phone camera work too. Just make sure to take the photos in good lighting, during the daytime is preferred.<\/li><li>If photographing more than one person, take individual pictures.<\/li><li>Remember to take the picture straight at eye level with the person you are photographing, standing about 2-4 feet away.<\/li><li>If person has long hair (past the shoulder line) put it up. Ponytails, braids, messy buns really do make for cute silhouettes and add character to the final silhouette.<\/li><li>For full body silhouettes, take a picture of the people standing, walking away or towards the camera. This works well when photographing siblings.<\/li><li>When photographing babies, try taking the picture when they are asleep. Hold the camera directly above their face, with only one side of the face showing.<\/li><\/ul>"
           }
         },
         "6f10a7f3-68ff-4cea-acf0-cc1c68392abe": {
           "type": "content",
           "settings": {
             "label": "Turnaround",
-            "content": "<p>Custom Product Details.<\/p>"
+            "content": "<p><strong>Silhouette Jewelry<\/strong><\/p><p>All custom jewelry has a 4 week turnaround (5-6 weeks during our busy holiday season and after a sale.) You will receive a digital proof within 7-10 business days to the email used to place your order. Once you have approved the silhouette, we will proceed with production and ship your piece in about 3 weeks.<\/p><p><strong>Silhouette Portraits<\/strong><\/p><p>You will receive a digital proof within 7-10 business days to the email used to place your order. Once you have approved the silhouette, we will proceed with production and ship your piece in about 3 weeks. Framed silhouettes can take another 1-2 weeks once your silhouette is approved, for a total of 3-4 week turnaround.<br\/><\/p><p><strong>Silhouette & House Ornaments<br\/><\/strong><\/p><p>Silhouette Ornaments have a 4 week turnaround. Home Ornaments have a 5-6 week turnaround.<\/p><p><strong>Custom Home Illustrations<\/strong><\/p><p>Items in this category take the longest, between 8-10 weeks turnaround and are offered only a few times a year.<\/p><p><em>If you need to receive your piece sooner, please reach out to us and we will do our best to accommodate you. You can read more about our turnaround information <\/em><a href=\"https:\/\/vana-chupp-studio.gorgias.help\/en-US\/articles\/turnaround-34112\" target=\"_blank\"><em>here<\/em><\/a><em>.<\/em><\/p>"
           }
         },
         "a7c4be2c-202b-484d-9c2e-c761d0730b2a": {
           "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
+          "disabled": true,
           "settings": {
+          }
+        },
+        "02d255c2-13ca-4ed3-97b6-52526b518717": {
+          "type": "shopify:\/\/apps\/stamped-product-reviews-ugc\/blocks\/product-rating-image\/a103faaf-2125-4b0e-89fa-de5149736723",
+          "disabled": true,
+          "settings": {
+            "api_key": "",
+            "store_hash": "",
+            "product_id": "",
+            "width": "",
+            "height": ""
+          }
+        },
+        "730ad4b7-292c-424e-94cc-d3e61537d87b": {
+          "type": "shopify:\/\/apps\/stamped-product-reviews-ugc\/blocks\/main-widget\/a103faaf-2125-4b0e-89fa-de5149736723",
+          "settings": {
+            "animation": true,
+            "tags_exclude": "",
+            "tags_include": "",
+            "search": "",
+            "linkify": true,
+            "use_metafields": false,
+            "sku_tagtype": "sku"
           }
         }
       },
@@ -132,7 +161,12 @@
         "f212af1e-2a40-4176-8d5c-5f71459cd7cc",
         "51437baf-d677-4694-89a8-2dc1f4481681",
         "6f10a7f3-68ff-4cea-acf0-cc1c68392abe",
-        "a7c4be2c-202b-484d-9c2e-c761d0730b2a"
+        "a7c4be2c-202b-484d-9c2e-c761d0730b2a",
+        "02d255c2-13ca-4ed3-97b6-52526b518717",
+        "730ad4b7-292c-424e-94cc-d3e61537d87b"
+      ],
+      "custom_css": [
+        "h2 {font-size: 25px;}"
       ],
       "settings": {
         "container-width": 4,
@@ -151,46 +185,11 @@
         "spacing-above": true,
         "spacing-below": true
       }
-    },
-    "1690907785e9ea0bce": {
-      "type": "apps",
-      "disabled": true,
-      "blocks": {
-        "d1e5140e-7ff2-49a0-a1d2-5bee34903abf": {
-          "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
-          "settings": {
-          }
-        },
-        "3d8d4821-9efc-4d29-848c-e811eea5205f": {
-          "type": "shopify:\/\/apps\/stamped-product-reviews-ugc\/blocks\/main-widget\/a103faaf-2125-4b0e-89fa-de5149736723",
-          "settings": {
-            "animation": true,
-            "tags_exclude": "",
-            "tags_include": "",
-            "search": "",
-            "linkify": true,
-            "use_metafields": false,
-            "sku_tagtype": "sku"
-          }
-        }
-      },
-      "block_order": [
-        "d1e5140e-7ff2-49a0-a1d2-5bee34903abf",
-        "3d8d4821-9efc-4d29-848c-e811eea5205f"
-      ],
-      "settings": {
-        "background-color": "none",
-        "light-text": false,
-        "container-width": 4,
-        "spacing-above": true,
-        "spacing-below": true
-      }
     }
   },
   "order": [
     "main",
     "74fc4420-adb8-4faf-a80e-fa6e8bafa913",
-    "related-products",
-    "1690907785e9ea0bce"
+    "related-products"
   ]
 }

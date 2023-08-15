@@ -24,7 +24,7 @@ bold-options.css version 6
 }
  
 .bold_option_product_info_title {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
 }
  
@@ -46,17 +46,20 @@ bold-options.css version 6
  
 .bold_option_product_title {
             font-size: 16px;
-                                font-weight: bold;
+          font-weight: bold;
         margin-bottom: 20px;
 }
- 
-.bold_option_title,
+.bold_option_title{
+  font-weight: bold;
+  font-size: 1.5rem;
+}
 .bold_option_value_price {
                 font-weight: normal;
         }
  
     .bold_option_dropdown .bold_option_element {
         margin-left: 5px;
+      font-size: 16px;
     }
     .bold_option_value {
         margin-right: 15px;
@@ -387,7 +390,7 @@ bold-options.css version 6
 
 .bold_option_title, .bold_option_value_title {
   text-transform: capitalize;
-  font-size: 1rem !important;
+  font-size: 1.2rem !important;
   font-family: "Crimson Text", serif;
 }
 
@@ -397,4 +400,7 @@ bold-options.css version 6
 
 label:not([data-item]) {
   letter-spacing: 0px;
+}
+.bold_option_element, .bold_option_element input, .bold_option_element select, .bold_option_element textarea{
+  font-size: .75rem;
 }

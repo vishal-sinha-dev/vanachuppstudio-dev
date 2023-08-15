@@ -29,45 +29,70 @@
         "cta2-link": ""
       }
     },
-    "70d5048c-7876-4635-9795-033d0723bb09": {
-      "type": "featured-columns",
+    "6b540f31-b67c-4a2d-8504-4188756f8749": {
+      "type": "text-columns",
       "blocks": {
-        "6c7823a6-cd3c-4efa-b520-1b4e8762f72c": {
-          "type": "image",
+        "template--20176719413545__6b540f31-b67c-4a2d-8504-4188756f8749-column-1": {
+          "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Vana_Chupp_Primary_Black.png",
-            "image-description": ""
+            "image": "shopify:\/\/shop_images\/vana-chupp-circle-black_2x_300x_e8b15fc2-6ade-4e76-9a0d-d204175a5d6b.png",
+            "title": "",
+            "description": "",
+            "link-url": "",
+            "link-text": ""
           }
         }
       },
       "block_order": [
-        "6c7823a6-cd3c-4efa-b520-1b4e8762f72c"
+        "template--20176719413545__6b540f31-b67c-4a2d-8504-4188756f8749-column-1"
       ],
       "settings": {
         "background-color": "none",
+        "light-text": false,
+        "block-spacing": true,
         "container-width": 1,
         "spacing-above": true,
-        "spacing-below": false,
-        "title": "",
+        "spacing-below": true,
+        "width": 1,
+        "aspect-ratio": "square",
+        "thumbnail-type": "image",
+        "image-width": 160,
+        "mobile-width": "1",
+        "text-alignment": "center",
+        "heading": "",
         "subtitle": "",
-        "columns": 1,
-        "show-gap": false
+        "link-url": "",
+        "link-text": "",
+        "show-strikethrough": false
       }
     },
     "16324732989269ca2c": {
       "type": "featured-text",
       "custom_css": [
-
+        "p {font-weight: 600;}"
       ],
       "settings": {
         "background-color": "none",
         "light-text": false,
         "container-width": 3,
-        "spacing-above": true,
+        "spacing-above": false,
+        "spacing-below": false,
+        "overline": "",
+        "heading": "",
+        "text": "<p>Vana Chupp Studio is a boutique lifestyle brand that transforms our customers’ most treasured people and moments captured in photographs into exquisite heirloom-quality jewelry and personal accessories. Vana Chupp founded the company as Le Papier Studio in 2008 as a creative expression of her passion for classic silhouette art inspired by her highest calling, motherhood.  <\/p><p><\/p>"
+      }
+    },
+    "13e5d2b7-0c09-48d5-b87b-ac1cee54aa7e": {
+      "type": "featured-text",
+      "settings": {
+        "background-color": "none",
+        "light-text": false,
+        "container-width": 4,
+        "spacing-above": false,
         "spacing-below": true,
         "overline": "",
         "heading": "",
-        "text": "<p>Vana Chupp Studio is a boutique lifestyle brand that transforms our customers’ most treasured people and moments captured in photographs into exquisite heirloom-quality jewelry and personal accessories. Vana Chupp founded the company as Le Papier Studio in 2008 as a creative expression of her passion for classic silhouette art inspired by her highest calling, motherhood.  <\/p><p>Taking your favorite photographs of family, pets or moments in time, we fashion those images into silhouette portraits and exquisite jewelry and personal accessories that are destined to become treasured heirlooms. As she has done from the beginning, Vana continues to directly consult with clients to ensure pieces<br\/>perfectly evokes those forever memories.<\/p>"
+        "text": "<p>Taking your favorite photographs of family, pets or moments in time, we fashion those images into silhouette portraits and exquisite jewelry and personal accessories that are destined to become treasured heirlooms. As she has done from the beginning, Vana continues to directly consult with clients to ensure pieces<br\/>perfectly evokes those forever memories.<\/p>"
       }
     },
     "6ea67666-6b04-4e91-91d3-7e146650ea98": {
@@ -101,7 +126,7 @@
         "0d50726e-9232-414a-a49e-351278202759"
       ],
       "custom_css": [
-        ".featured-columns--description{max-height: 470px; padding-top: 20px; border-top: 10px solid #98acc9; align-items: center; text-align:center; border-bottom: 5px solid #98acc9;}",
+        ".featured-columns--description {padding-top: 20px; border-top: 10px solid #98acc9; align-items: center; text-align: center; border-bottom: 5px solid #98acc9;}",
         "h2 {color: #98acc9;}"
       ],
       "settings": {
@@ -218,6 +243,9 @@
         "5ab6060b-c323-4c2e-b6d2-02aeee2457bb",
         "d9b82771-cd70-41b3-9b82-761da1f924af",
         "c57519dc-08cd-4104-9437-6a2c462d2653"
+      ],
+      "custom_css": [
+        ".featured-popup--trigger {text-transform: uppercase;}"
       ],
       "settings": {
         "text-color": "auto",
@@ -506,7 +534,7 @@
       ],
       "settings": {
         "text-color": "auto",
-        "background-color": "none",
+        "background-color": "light",
         "spacing-above": true,
         "spacing-below": true,
         "spacing-around-blocks": true,
@@ -526,8 +554,9 @@
   },
   "order": [
     "16324732604d3e7054",
-    "70d5048c-7876-4635-9795-033d0723bb09",
+    "6b540f31-b67c-4a2d-8504-4188756f8749",
     "16324732989269ca2c",
+    "13e5d2b7-0c09-48d5-b87b-ac1cee54aa7e",
     "6ea67666-6b04-4e91-91d3-7e146650ea98",
     "main",
     "65a1c8a7-4db6-4617-98b0-6503a5bdb790",

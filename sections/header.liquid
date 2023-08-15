@@ -161,7 +161,13 @@
     </div>
 
     <div class="header--mobile--cart" data-item="accent-text">
-      {%- render 'header-cart', cart_icon: cart_icon -%}
+      
+       <a href="#swym-wishlist" class="swym-wishlist" style="margin-right: 20px;"><i aria-hidden="true" focusable="false" role="presentation" class="fa fa-heart"></i></a>
+      {%- 
+     
+       render 'header-cart', cart_icon: cart_icon
+  
+  -%}
     </div>
   </div>
 </header-root>

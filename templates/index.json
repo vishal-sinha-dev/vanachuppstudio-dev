@@ -35,7 +35,7 @@
     "2b278f3a-44e7-489b-a362-8739cf852742": {
       "type": "featured-text",
       "custom_css": [
-        "p {font-family: Montserrat; font-size: 28px; font-weight: bold;}",
+        "p {font-family: Montserrat; font-size: 28px; font-weight: 500px; padding: 20px;}",
         "@media only screen and (max-width: 767px) {p {font-size: 16px; }}"
       ],
       "settings": {
@@ -90,8 +90,8 @@
     "featured-collection-grid": {
       "type": "featured-collection",
       "custom_css": [
-        ".featured-collection--title {font-size: 2rem;}",
-        ".carousel--root[data-spacing-around-blocks=\"true\"] .carousel--block {padding: 25px;}"
+        ".featured-collection--title {font-size: 1.5rem;}",
+        ".carousel--root[data-spacing-around-blocks=\"true\"] .carousel--block {padding: 15px;}"
       ],
       "settings": {
         "collection": "vanas-favorites",
@@ -107,15 +107,53 @@
         "products-per-row--mobile": "1"
       }
     },
+    "fe16412d-8b34-4f96-b559-b57449d31180": {
+      "type": "text-columns",
+      "blocks": {
+        "template--20176719348009__fe16412d-8b34-4f96-b559-b57449d31180-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vana-chupp-circle-black_2x_300x_e8b15fc2-6ade-4e76-9a0d-d204175a5d6b.png",
+            "title": "",
+            "description": "",
+            "link-url": "",
+            "link-text": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20176719348009__fe16412d-8b34-4f96-b559-b57449d31180-column-1"
+      ],
+      "settings": {
+        "background-color": "none",
+        "light-text": false,
+        "block-spacing": true,
+        "container-width": 1,
+        "spacing-above": true,
+        "spacing-below": true,
+        "width": 1,
+        "aspect-ratio": "square",
+        "thumbnail-type": "image",
+        "image-width": 150,
+        "mobile-width": "1",
+        "text-alignment": "center",
+        "heading": "",
+        "subtitle": "",
+        "link-url": "",
+        "link-text": "",
+        "show-strikethrough": false
+      }
+    },
     "59f37b57-914c-46b9-87f1-a5093741e2b2": {
       "type": "image-with-text",
       "custom_css": [
         ".image-with-text--root {background: url(\"https:\/\/cdn.shopify.com\/s\/files\/1\/0754\/6053\/files\/Jewelry.png\") no-repeat center center; background-size: cover;}",
-        "@media only screen and (min-width: 768px) {.image-with-text--root {padding: 100px; } h1 {font-size: 3rem; } h2 {font-size: 2.75rem; }}",
+        "@media only screen and (min-width: 768px) {.image-with-text--root {padding: 170px; }}",
+        "h1 {font-size: 1.5rem; font-weight: 600;}",
+        "h2 {font-size: 1.5rem; font-weight: 600; margin-bottom: 15px;}",
         ".featured-content--image {display: none;}",
         ".featured-content--container {justify-content: flex-end;}",
         "[data-background-color=\"none\"] {background: none;}",
-        "h1,h2 {font-weight: 500;}",
         ".featured-content--text {max-width: 750px;}"
       ],
       "settings": {
@@ -135,7 +173,7 @@
         "mobile-overlay": false,
         "overline": "",
         "title": "",
-        "description": "<h1>Vana Chupp Studio<\/h1><p><em>is a boutique lifestyle brand that transforms our customers’ most treasured people and moments into exquisite heirloom jewelry and personal accessories. Vana Chupp founded the company as Le Papier Studio in 2008 as a creative expression of her passion for classic silhouette art inspired by her highest calling, motherhood.<\/em><\/p><h2>What We're Know For<\/h2><p>Taking your favorite photographs of family, pets, or moments in time, we fashion those images into silhouette portraits, exquisite silhouette jewelry, and personal accessories that become treasured family heirlooms. As she has done from the beginning, Vana continues to directly consult with clients to ensure pieces perfectly evoke those forever memories.<\/p><h2>What We Believe<\/h2><p>We know from our own experiences that our little ones grow up entirely too quickly. Our mission is to inspire parents to find joy in even the most seemingly mundane moments, to mentally pause from the distractions and demands of our hectic world in order to live in the present, and to cherish the precious gift of time.<\/p>",
+        "description": "<h2>Who We Are<\/h2><p>Vana Chupp Studio is a boutique lifestyle brand that transforms our customers’ most treasured people and moments into exquisite heirloom jewelry and personal accessories. Vana Chupp founded the company as Le Papier Studio in 2008 as a creative expression of her passion for classic silhouette art inspired by her highest calling, motherhood.<\/p><p><\/p><h2>What We're Known For<\/h2><p>Taking your favorite photographs of family, pets, or moments in time, we fashion those images into silhouette portraits, exquisite silhouette jewelry, and personal accessories that become treasured family heirlooms. As she has done from the beginning, Vana continues to directly consult with clients to ensure pieces perfectly evoke those forever memories.<\/p><p><\/p><h2>What We Believe<\/h2><p>We know from our own experiences that our little ones grow up entirely too quickly. Our mission is to inspire parents to find joy in even the most seemingly mundane moments, to mentally pause from the distractions and demands of our hectic world in order to live in the present, and to cherish the precious gift of time.<\/p>",
         "link-url": "",
         "link-text": "",
         "cta1-text": "",
@@ -147,7 +185,7 @@
     "aef4886b-098f-4b2f-8510-9f374eca1aa8": {
       "type": "featured-collections",
       "custom_css": [
-        "@media only screen and (max-width: 767px) {h3 {font-size: 16px; } .featured-collections--title {min-height: 55px; }}"
+        "@media only screen and (max-width: 767px) {h3 {font-size: 12px; } .featured-collections--title {min-height: 55px; }}"
       ],
       "settings": {
         "heading": "Our Collections",
@@ -175,9 +213,11 @@
       "type": "featured-blog",
       "custom_css": [
         "h2 {font-size: 2rem; margin-bottom: 2rem;}",
-        "h3,a,[data-item=\"light-accent-text\"] {color: #000;}",
+        ".article--item--heading {font-size: bold; margin-top: 15px; margin-bottom: 15px;}",
+        "h3,a,[data-item=\"light-accent-text\"] {color: #000; font-weight:500;}",
         "[data-item=\"block-link\"] > :after {border-color: #000;}",
-        ".article--item--excerpt {color: #000;}"
+        ".article--item--excerpt {color: #000;}",
+        "@media only screen and (max-width: 767px) {h2 {margin-top: 15px; } [data-container=\"panel\"] {grid-gap: 40px; }}"
       ],
       "settings": {
         "aspect-ratio": "landscape",
@@ -196,7 +236,6 @@
     },
     "796ac717-a599-4e94-b46e-16cfcf760bee": {
       "type": "slideshow",
-      "disabled": true,
       "blocks": {
         "template--18592835207465__796ac717-a599-4e94-b46e-16cfcf760bee-16861029270a28b589-0": {
           "type": "image",
@@ -253,6 +292,7 @@
         "192d0fd5-56af-4a08-9a13-4ae5166e6d5e",
         "7e7f3717-2591-4449-9c91-1dca4ce2e1df"
       ],
+      "disabled": true,
       "custom_css": [
         "h3 {font-size: 3.5rem;}",
         "p {font-size: 2.5rem; line-height: 50px;}",
@@ -344,6 +384,98 @@
         "spacing-below": true,
         "mobile-width": "1"
       }
+    },
+    "4c4c96f9-199b-4d6d-8b96-63b77ca5b2f0": {
+      "type": "slideshow",
+      "blocks": {
+        "template--20176719348009__4c4c96f9-199b-4d6d-8b96-63b77ca5b2f0-profile-1": {
+          "type": "profile",
+          "disabled": true,
+          "settings": {
+            "name": "Vana",
+            "role": "Founder + CEO",
+            "description": "<p>Combine imagery with text to create stand-out campaign sections, eye-catching promotions, information blocks and more.<\/p>"
+          }
+        },
+        "template--20176719348009__4c4c96f9-199b-4d6d-8b96-63b77ca5b2f0-profile-2": {
+          "type": "profile",
+          "disabled": true,
+          "settings": {
+            "name": "Vana",
+            "role": "Founder + CEO",
+            "description": "<p>Combine imagery with text to create stand-out campaign sections, eye-catching promotions, information blocks and more.<\/p>"
+          }
+        },
+        "template--20176719348009__4c4c96f9-199b-4d6d-8b96-63b77ca5b2f0-profile-3": {
+          "type": "profile",
+          "disabled": true,
+          "settings": {
+            "name": "Vana",
+            "role": "Founder + CEO",
+            "description": "<p>Combine imagery with text to create stand-out campaign sections, eye-catching promotions, information blocks and more.<\/p>"
+          }
+        },
+        "template--20176719348009__4c4c96f9-199b-4d6d-8b96-63b77ca5b2f0-profile-4": {
+          "type": "profile",
+          "disabled": true,
+          "settings": {
+            "name": "Vana",
+            "role": "Founder + CEO",
+            "description": "<p>Combine imagery with text to create stand-out campaign sections, eye-catching promotions, information blocks and more.<\/p>"
+          }
+        },
+        "0d8cbba0-b35c-4f2e-a01f-d774bcc3df6c": {
+          "type": "image",
+          "settings": {
+            "text-position": "bottom-left",
+            "text-width": "medium",
+            "overline": "Overline text",
+            "title": "Slide heading",
+            "description": "<p>Combine imagery with text to create stand-out campaign sections, eye-catching promotions, information blocks and more.<\/p>",
+            "link-url": "\/",
+            "link-text": "View more"
+          }
+        },
+        "b773a6ad-0ef8-4d12-a95d-9161afcc3923": {
+          "type": "image",
+          "settings": {
+            "text-position": "bottom-left",
+            "text-width": "medium",
+            "overline": "Overline text",
+            "title": "Slide heading",
+            "description": "<p>Combine imagery with text to create stand-out campaign sections, eye-catching promotions, information blocks and more.<\/p>",
+            "link-url": "\/",
+            "link-text": "View more"
+          }
+        }
+      },
+      "block_order": [
+        "template--20176719348009__4c4c96f9-199b-4d6d-8b96-63b77ca5b2f0-profile-1",
+        "template--20176719348009__4c4c96f9-199b-4d6d-8b96-63b77ca5b2f0-profile-2",
+        "template--20176719348009__4c4c96f9-199b-4d6d-8b96-63b77ca5b2f0-profile-3",
+        "template--20176719348009__4c4c96f9-199b-4d6d-8b96-63b77ca5b2f0-profile-4",
+        "0d8cbba0-b35c-4f2e-a01f-d774bcc3df6c",
+        "b773a6ad-0ef8-4d12-a95d-9161afcc3923"
+      ],
+      "disabled": true,
+      "settings": {
+        "text-color": "auto",
+        "background-color": "none",
+        "spacing-above": false,
+        "spacing-below": false,
+        "spacing-around-blocks": false,
+        "image-aspect-ratio": 56,
+        "darken-image": true,
+        "blocks_per_slide": 1,
+        "box-around-text": false,
+        "auto-rotate": false,
+        "rotate-frequency": 7,
+        "transition_type": "slide",
+        "mobile-image-aspect-ratio": 134,
+        "blocks_per_slide_mobile": "1",
+        "mobile-overlay": true,
+        "title": "Add a title or tagline"
+      }
     }
   },
   "order": [
@@ -351,10 +483,12 @@
     "2b278f3a-44e7-489b-a362-8739cf852742",
     "75eaabc3-47b5-4757-8339-55b2192e3e6a",
     "featured-collection-grid",
+    "fe16412d-8b34-4f96-b559-b57449d31180",
     "59f37b57-914c-46b9-87f1-a5093741e2b2",
     "aef4886b-098f-4b2f-8510-9f374eca1aa8",
     "featured-blog",
     "796ac717-a599-4e94-b46e-16cfcf760bee",
-    "54823ba1-ac6d-4ef0-a9ee-9c6e7fb029a8"
+    "54823ba1-ac6d-4ef0-a9ee-9c6e7fb029a8",
+    "4c4c96f9-199b-4d6d-8b96-63b77ca5b2f0"
   ]
 }

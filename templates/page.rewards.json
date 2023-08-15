@@ -88,7 +88,7 @@
         "aspect-ratio": "square",
         "thumbnail-type": "number",
         "image-width": 120,
-        "mobile-width": "2",
+        "mobile-width": "1",
         "text-alignment": "center",
         "heading": "How It Works",
         "subtitle": "",
@@ -124,6 +124,14 @@
             "description": "Birthday Bonus"
           }
         },
+        "92ffa235-86ab-4ea5-ae7d-30e76f6269c2": {
+          "type": "list",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Envelope_dcba2672-f70e-427b-a4be-a92b66e97fe3.png",
+            "title": "150 Points",
+            "description": "Newsletter Sign Up"
+          }
+        },
         "template--20140906250558__3a322c16-3892-4c53-8ff1-4ad1035d2272-list-4": {
           "type": "list",
           "settings": {
@@ -131,22 +139,35 @@
             "title": "50 Points",
             "description": "Leave a product review"
           }
+        },
+        "a94ce71c-ac3f-49c5-b80c-9b54b266e03d": {
+          "type": "list",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "description": ""
+          }
         }
       },
       "block_order": [
         "template--20140906250558__3a322c16-3892-4c53-8ff1-4ad1035d2272-list-1",
         "template--20140906250558__3a322c16-3892-4c53-8ff1-4ad1035d2272-list-2",
         "template--20140906250558__3a322c16-3892-4c53-8ff1-4ad1035d2272-list-3",
-        "template--20140906250558__3a322c16-3892-4c53-8ff1-4ad1035d2272-list-4"
+        "92ffa235-86ab-4ea5-ae7d-30e76f6269c2",
+        "template--20140906250558__3a322c16-3892-4c53-8ff1-4ad1035d2272-list-4",
+        "a94ce71c-ac3f-49c5-b80c-9b54b266e03d"
+      ],
+      "custom_css": [
+        "@media only screen and (min-width: 737px){.featured-list--item--text-container {margin-left: 20px;}}"
       ],
       "settings": {
         "text-color": "auto",
         "background-color": "none",
         "container-width": 4,
         "spacing-above": false,
-        "spacing-below": false,
+        "spacing-below": true,
         "image-aspect-ratio": 80,
-        "mobile-image-aspect-ratio": 134,
+        "mobile-image-aspect-ratio": 74,
         "darken-image": false,
         "parallax-enabled": false,
         "text-position": "left",
@@ -190,7 +211,7 @@
         "background-image": "shopify:\/\/shop_images\/Vana_Chupp_Primary_Black.png",
         "overline": "",
         "title": "REDEEM FOR DISCOUNTS",
-        "description": "<p>Redeeming your earned points is easy, simply apply your points balance to your cart.<\/p>",
+        "description": "<p>Redeeming your earned points is easy, simply apply your points balance to your cart.<\/p><p><strong>500 points = $25<\/strong><\/p>",
         "button-text": "Shop Now to Redeem",
         "button-url": "shopify:\/\/collections",
         "button-action": ""
@@ -301,6 +322,9 @@
         "9bc9c059-277a-42c4-abd6-5a1e48ce64de",
         "37686ea1-21c9-4239-bb5c-2bcac27c4c48",
         "a76234e5-4505-4c28-9de7-5e37159665f7"
+      ],
+      "custom_css": [
+        "@media only screen and (max-width: 767px) {.collapsible-rows--header {text-align: center; }}"
       ],
       "settings": {
         "background-color": "none",

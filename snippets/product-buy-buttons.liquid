@@ -4,7 +4,7 @@
 
   assign current_variant = product.selected_or_first_available_variant
 
-  unless settings.product--quick-add-enabled
+  unless settings['product--quick-add-enabled']
     render 'section-assets', name: 'product-buy-buttons', type: 'script'
   endunless
 %}
@@ -17,14 +17,22 @@
   {%- form 'product', product, class: 'product-buy-buttons--form', id: id -%}
     {{- form | payment_terms -}}
 
-    {%- if request.page_type != "password" -%}
-      <div class="product-buy-buttons--primary"
+    {%- if request.page_type != 'password' -%}
+      <div class="disclaimer">
+        <h5>CUSTOMERS PLACING ORDERS FOR CUSTOM SILHOUETTE PRODUCTS</h5>
+        <p>
+          If you aren't able to submit your photos with your order, make sure to email it to orders@vanachuppstudio.com
+          within 72 hrs of ordering.
+        </p>
+      </div>
+      <div
+        class="product-buy-buttons--primary"
         data-enabled="true"
         data-loading="false"
         {% if smart_payment_enabled and product.selling_plan_groups == empty %}
-          data-item='secondary-button'
+          data-item="secondary-button"
         {% else %}
-          data-item='button'
+          data-item="button"
         {% endif %}
       >
         <button

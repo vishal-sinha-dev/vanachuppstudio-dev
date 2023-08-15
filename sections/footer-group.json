@@ -34,7 +34,7 @@
         "c4b28e12-4697-484c-a7b6-4c5f37dda55b"
       ],
       "custom_css": [
-        ".footer--block--heading{font-weight: bold;}"
+        ".footer--block--heading {font-weight: 500;}"
       ],
       "settings": {
         "background-color": "accent-2",

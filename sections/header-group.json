@@ -14,6 +14,9 @@
     },
     "header": {
       "type": "header",
+      "custom_css": [
+
+      ],
       "settings": {
         "transparent-menu": false,
         "background-color": "light",

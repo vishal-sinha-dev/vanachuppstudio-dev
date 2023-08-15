@@ -195,12 +195,14 @@
               {%- render 'product-quantity', id: product_id -%}
 
             {%- when 'buy-buttons' -%}
-              {%-
+             
+            {%-
                 render 'product-buy-buttons',
                 id: product_id,
                 product: product,
                 smart_payment_enabled: block.settings.smart-payment-enabled
               -%}
+        
 
             {%- when 'unavailable-form' -%}
               {%- render 'product-unavailable-form', product: product, id: product_id -%}

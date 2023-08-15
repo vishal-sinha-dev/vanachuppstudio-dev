@@ -1,0 +1,142 @@
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "disabled": true,
+      "settings": {
+        "show-title": true,
+        "background-color": "none",
+        "light-text": false,
+        "container-width": 4,
+        "spacing-above": true,
+        "spacing-below": true
+      }
+    },
+    "e910f11d-7ccd-4d92-a80b-cd53c416f48d": {
+      "type": "featured-text",
+      "settings": {
+        "background-color": "none",
+        "light-text": false,
+        "container-width": 2,
+        "spacing-above": true,
+        "spacing-below": true,
+        "overline": "",
+        "heading": "{{ page.title }}",
+        "text": "<p><\/p><p><strong>Celebrate every family addition with a unique silhouette or birthstone charm.<\/strong><\/p><p><\/p><p>We are thrilled that you've chosen to add on to your heirloom necklace and can't wait to get started in assisting you! Take a minute to look through the instructions provided on this page to ensure this process is easy and quick.<br\/><br\/>Adding charms to a bracelet or necklace is a service intended for those customers who already own a necklace or bracelet from our shop. If you do not own one of our pieces, you must first order a<a href=\"https:\/\/vanachuppstudio.com\/collections\/jewelry\">Vana Chupp Studio jewelry piece<\/a>.<\/p>"
+      }
+    },
+    "07a63749-55c2-4a95-a84c-f1eefe99b2ad": {
+      "type": "image-with-text",
+      "custom_css": [
+        ".image--root img {object-fit: contain;}"
+      ],
+      "settings": {
+        "text-color": "auto",
+        "background-color": "none",
+        "container-width": 3,
+        "spacing-above": false,
+        "spacing-below": false,
+        "image-aspect-ratio": 38,
+        "mobile-image-aspect-ratio": 134,
+        "darken-image": false,
+        "parallax-enabled": false,
+        "text-position": "center",
+        "text-width": "medium",
+        "overlap": false,
+        "box-around-text": false,
+        "mobile-overlay": false,
+        "image": "shopify:\/\/shop_images\/ADDING_NEW_CHARMS-web_1024x1024_1.png",
+        "mobile-image": "shopify:\/\/shop_images\/ADDING_NEW_CHARMS-mobile.png",
+        "overline": "",
+        "title": "",
+        "description": "",
+        "link-url": "",
+        "link-text": "",
+        "cta1-text": "",
+        "cta1-link": "",
+        "cta2-text": "",
+        "cta2-link": ""
+      }
+    },
+    "49f65dbb-012d-43cc-85b4-3084495ffa0d": {
+      "type": "featured-text",
+      "settings": {
+        "background-color": "none",
+        "light-text": false,
+        "container-width": 4,
+        "spacing-above": true,
+        "spacing-below": true,
+        "overline": "",
+        "heading": "STEP 1: PURCHASE A CHARM ADD-ON",
+        "text": "<p><\/p><p>Order a new charm from our<a href=\"https:\/\/vanachuppstudio.com\/collections\/add-on-products-services\/products\/add-a-charm-add-on\">Add-A-Charm selection<\/a>.<br\/>Make sure you order the correct size charm to match the ones ordered previously.<\/p>"
+      }
+    },
+    "81be5e36-cc6e-435c-b545-0dfa1d03910f": {
+      "type": "featured-text",
+      "settings": {
+        "background-color": "none",
+        "light-text": false,
+        "container-width": 2,
+        "spacing-above": false,
+        "spacing-below": true,
+        "overline": "",
+        "heading": "STEP 2: WE SEND A SHIPPING KIT",
+        "text": "<p><\/p><p>Once ordered, we will ship you a free shipping kit with instructions on how to send your existing necklace\/bracelet to us. Please do not send your piece to us until you receive the Shipping Kit. If you have any questions about this process, please <a href=\"https:\/\/lepapierstudio.com\/pages\/contact\">contact us<\/a>.<\/p><p><em><strong>Important<\/strong><\/em><em>: If you choose to add on to your existing piece without ordering directly from our <\/em><a href=\"https:\/\/vanachuppstudio.com\/collections\/add-on-products-services\/products\/add-a-charm-add-on\"><em>Add-A-Charm product<\/em><\/a><em> page, we will not be able to send you the Shipping Kit and you will be responsible for shipping your piece back to us.<\/em><\/p>"
+      }
+    },
+    "3f4be422-2398-4baa-8ceb-edf7bb75352c": {
+      "type": "featured-text",
+      "settings": {
+        "background-color": "none",
+        "light-text": false,
+        "container-width": 2,
+        "spacing-above": false,
+        "spacing-below": true,
+        "overline": "",
+        "heading": "STEP 3: NEW CHARM ASSEMBLY & RETURN",
+        "text": "<p><\/p><p>Once we have received your existing necklace\/bracelet back and have completed your new charm\/s we will assemble and ship your piece back to you. We will clean and polish your old charms to match your new charm\/s as a courtesy.<\/p>"
+      }
+    },
+    "9618f962-af39-4efb-b14f-ac7c3c3787f9": {
+      "type": "image-with-text",
+      "custom_css": [
+        ".image--root img {object-fit: contain;}"
+      ],
+      "settings": {
+        "text-color": "auto",
+        "background-color": "none",
+        "container-width": 3,
+        "spacing-above": false,
+        "spacing-below": false,
+        "image-aspect-ratio": 46,
+        "mobile-image-aspect-ratio": 42,
+        "darken-image": false,
+        "parallax-enabled": false,
+        "text-position": "center",
+        "text-width": "medium",
+        "overlap": false,
+        "box-around-text": false,
+        "mobile-overlay": false,
+        "image": "shopify:\/\/shop_images\/adding-new-charms_1024x1024_e2edf3a4-e91c-44c5-9e60-9ca6ba7ad24e.jpg",
+        "overline": "",
+        "title": "",
+        "description": "",
+        "link-url": "",
+        "link-text": "",
+        "cta1-text": "",
+        "cta1-link": "",
+        "cta2-text": "",
+        "cta2-link": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "e910f11d-7ccd-4d92-a80b-cd53c416f48d",
+    "07a63749-55c2-4a95-a84c-f1eefe99b2ad",
+    "49f65dbb-012d-43cc-85b4-3084495ffa0d",
+    "81be5e36-cc6e-435c-b545-0dfa1d03910f",
+    "3f4be422-2398-4baa-8ceb-edf7bb75352c",
+    "9618f962-af39-4efb-b14f-ac7c3c3787f9"
+  ]
+}

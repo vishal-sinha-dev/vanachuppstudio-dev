@@ -105,7 +105,7 @@
           echo skip_link_t
         echo '</a>'
 
-        render 'carousel', view: 'product', section_id: section.id, onboarding: onboarding, bg_color: bg_color, blocks: collection.products, blocks_per_slide: 4, blocks_per_slide_mobile: 2, dot_nav_enabled: true, total_blocks: max_products, spacing_around_blocks: true, transition_type: 'slide'
+        render 'carousel', view: 'product', section_id: section.id, onboarding: onboarding, bg_color: bg_color, blocks: collection.products, blocks_per_slide: 4, blocks_per_slide_mobile: 1, dot_nav_enabled: true, total_blocks: max_products, spacing_around_blocks: true, transition_type: 'slide'
 
       else
         if onboarding
