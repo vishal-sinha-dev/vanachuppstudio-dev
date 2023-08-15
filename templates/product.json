@@ -8,6 +8,12 @@
           "settings": {
           }
         },
+        "8c5d3396-8352-4467-9f39-8f2ca0c0a1ce": {
+          "type": "liquid",
+          "settings": {
+            "custom-liquid": "<span class=\"stamped-product-reviews-badge stamped-main-badge\" data-id=\"{{ product.id }}\" data-product-sku=\"{{ product.handle }}\" style=\"display: inline-block;\">{{ product.metafields.stamped.badge }}<\/span>"
+          }
+        },
         "vendor": {
           "type": "vendor",
           "settings": {
@@ -67,6 +73,7 @@
       },
       "block_order": [
         "heading",
+        "8c5d3396-8352-4467-9f39-8f2ca0c0a1ce",
         "vendor",
         "price",
         "options",

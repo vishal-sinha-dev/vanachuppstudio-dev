@@ -8,6 +8,13 @@ class ProductTabs {
     this.headers.forEach((header, index) => {
       header.addEventListener('click', () => this.handleClick(index));
     });
+
+    this.review = document.querySelector(
+      '.product-page--info .stamped-product-reviews-badge'
+    );
+    this.review.addEventListener('click', () => {
+      this.handleClick(3);
+    });
   }
 
   handleClick(current) {
