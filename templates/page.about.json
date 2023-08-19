@@ -5,7 +5,7 @@
       "custom_css": [
         "h3 {margin-top: 25px;}",
         ".featured-content--description {margin-bottom: 25px;}",
-        ".image--root{object-fit:cover;}"
+        ".image--root {object-fit: cover;}"
       ],
       "settings": {
         "text-color": "auto",
@@ -131,8 +131,9 @@
         "0d50726e-9232-414a-a49e-351278202759"
       ],
       "custom_css": [
-        ".featured-columns--description {padding-top: 20px; border-top: 10px solid #98acc9; align-items: center; text-align: center; border-bottom: 5px solid #98acc9;}",
-        "h2 {color: #98acc9;}"
+        ".featured-columns--description {padding-top: 20px; border-top: 10px solid #98acc9; align-items: center; text-align: center; height: 575px; border-bottom: 7px solid #98acc9;}",
+        "h2 {color: #98acc9;}",
+        ".featured-columns-item {height: 570px;}"
       ],
       "settings": {
         "background-color": "none",

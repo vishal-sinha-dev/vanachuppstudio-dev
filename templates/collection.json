@@ -10,14 +10,14 @@
         "spacing-below": false,
         "image-aspect-ratio": 36,
         "mobile-image-aspect-ratio": 92,
-        "darken-image": true,
+        "darken-image": false,
         "parallax-enabled": false,
         "text-position": "center",
-        "text-width": "medium",
+        "text-width": "large",
         "overlap": false,
         "box-around-text": false,
         "mobile-overlay": false,
-        "image": "shopify:\/\/shop_images\/IC_header.png",
+        "image": "{{ collection.image }}",
         "overline": "",
         "title": "",
         "description": "",
@@ -29,10 +29,26 @@
         "cta2-link": ""
       }
     },
+    "e269e56a-2c24-4ccb-bab7-82855a103597": {
+      "type": "featured-text",
+      "disabled": true,
+      "settings": {
+        "background-color": "none",
+        "light-text": false,
+        "container-width": 3,
+        "spacing-above": true,
+        "spacing-below": true,
+        "overline": "",
+        "heading": "{{ collection.title }}",
+        "text": "<p>{{ collection.metafields.custom.short_description | metafield_tag }}<\/p>"
+      }
+    },
     "collection-header": {
       "type": "collection--header",
       "custom_css": [
-        "h1 {font-size: 1.3rem;}"
+        "h1 {font-size: 50px; color: #4a4a4a; font-weight: 500;}",
+        "p {font-size: 24px;}",
+        "@media only screen and (max-width: 767px) {h1 {font-size: 28px; } p {font-size: 16px; }}"
       ],
       "settings": {
         "enable-header": true,
@@ -41,7 +57,7 @@
         "show-description": true,
         "description-alignment": "with-title",
         "show-image": false,
-        "use-image-fallback": true,
+        "use-image-fallback": false,
         "image-aspect-ratio": 76,
         "mobile-image-aspect-ratio": 134,
         "alt-color": true,
@@ -109,6 +125,7 @@
   },
   "order": [
     "footer-promo",
+    "e269e56a-2c24-4ccb-bab7-82855a103597",
     "collection-header",
     "navigation",
     "main",

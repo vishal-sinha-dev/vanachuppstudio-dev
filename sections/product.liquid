@@ -164,14 +164,14 @@
                   {{- product.title -}}
                 </h1>
               {%- endif -%}
-
+{% comment %} 
             {%- when 'vendor' -%}
               <div class="product-page--vendor" data-item="light-accent-text">
                 <a href="{{ product.vendor | url_for_vendor }}">
                   {{- product.vendor -}}
                 </a>
               </div>
-
+{% endcomment %}
             {%- when 'price' -%}
               {%- render 'product-price', product: product, id: product_id -%}
 

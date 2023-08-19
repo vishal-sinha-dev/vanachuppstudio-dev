@@ -12,7 +12,7 @@
         "spacing-above": false,
         "spacing-below": false,
         "image-aspect-ratio": 40,
-        "mobile-image-aspect-ratio": 44,
+        "mobile-image-aspect-ratio": 96,
         "darken-image": true,
         "parallax-enabled": false,
         "text-position": "center",
@@ -21,6 +21,7 @@
         "box-around-text": false,
         "mobile-overlay": false,
         "image": "shopify:\/\/shop_images\/Header_Image.png",
+        "mobile-image": "shopify:\/\/shop_images\/Annviersary_Sale_-_Web_Mobile_4.png",
         "overline": "",
         "title": "",
         "description": "",
@@ -90,7 +91,8 @@
     "featured-collection-grid": {
       "type": "featured-collection",
       "custom_css": [
-        ".featured-collection--title {font-size: 1.5rem;}",
+        ".featured-collection--title {font-size: 50px; color: #4a4a4a; font-weight: 500;}",
+        "@media only screen and (max-width: 768px) {.featured-collection--title {font-size: 28px; font-weight: 500; }}",
         ".carousel--root[data-spacing-around-blocks=\"true\"] .carousel--block {padding: 15px;}"
       ],
       "settings": {
@@ -149,12 +151,11 @@
       "custom_css": [
         ".image-with-text--root {background: url(\"https:\/\/cdn.shopify.com\/s\/files\/1\/0754\/6053\/files\/Jewelry.png\") no-repeat center center; background-size: cover;}",
         "@media only screen and (min-width: 768px) {.image-with-text--root {padding: 170px; }}",
-        "h1 {font-size: 1.5rem; font-weight: 600;}",
-        "h2 {font-size: 1.5rem; font-weight: 600; margin-bottom: 15px;}",
+        "h2 {font-size: 50px; color: #4a4a4a; font-weight: 500; margin-bottom: 15px;}",
+        "@media only screen and (max-width: 768px) {h2 {font-size: 28px; }}",
         ".featured-content--image {display: none;}",
         ".featured-content--container {justify-content: flex-end;}",
-        "[data-background-color=\"none\"] {background: none;}",
-        ".featured-content--text {max-width: 750px;}"
+        "[data-background-color=\"none\"] {background: none;}"
       ],
       "settings": {
         "text-color": "auto",
@@ -185,7 +186,9 @@
     "aef4886b-098f-4b2f-8510-9f374eca1aa8": {
       "type": "featured-collections",
       "custom_css": [
-        "@media only screen and (max-width: 767px) {h3 {font-size: 12px; } .featured-collections--title {min-height: 55px; }}"
+        "h2 {font-size: 50px; font-weight: 500; color: #4a4a4a;}",
+        "h3 {text-transform: capitalize !important;}",
+        "@media only screen and (max-width: 767px) {h3 {font-size: 12px; text-transform: capitalize !important; } .featured-collections--title {min-height: 55px; } h2 {font-size: 28px; }}"
       ],
       "settings": {
         "heading": "Our Collections",
@@ -212,12 +215,12 @@
     "featured-blog": {
       "type": "featured-blog",
       "custom_css": [
-        "h2 {font-size: 2rem; margin-bottom: 2rem;}",
+        "h2 {font-size: 50px; margin-bottom: 2rem; color: #4a4a4a; font-weight: 500;}",
         ".article--item--heading {font-size: bold; margin-top: 15px; margin-bottom: 15px;}",
-        "h3,a,[data-item=\"light-accent-text\"] {color: #000; font-weight:500;}",
+        "h3,a,[data-item=\"light-accent-text\"] {color: #000; font-weight: 500;}",
         "[data-item=\"block-link\"] > :after {border-color: #000;}",
         ".article--item--excerpt {color: #000;}",
-        "@media only screen and (max-width: 767px) {h2 {margin-top: 15px; } [data-container=\"panel\"] {grid-gap: 40px; }}"
+        "@media only screen and (max-width: 767px) {h2 {font-size: 28px; margin-top: 15px; } [data-container=\"panel\"] {grid-gap: 40px; }}"
       ],
       "settings": {
         "aspect-ratio": "landscape",
@@ -371,7 +374,9 @@
       "custom_css": [
         ".testimonials--name {font-family: Crimson-text; font-size: 13px;}",
         ".tes .testimonials--description {font-family: Crimson-text; font-size: 24px;}",
-        ".testimonials--info {background: transparent;}"
+        ".testimonials--info {background: transparent;}",
+        "h3 {font-size: 50px; color: #4a4a4a; font-weight: 500;}",
+        "@media only screen and (max-width: 767px) {h3 {font-size: 28px; }}"
       ],
       "settings": {
         "overline": "",
