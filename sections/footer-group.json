@@ -5,6 +5,12 @@
     "footer": {
       "type": "footer",
       "blocks": {
+        "2151c583-ece9-4e62-836e-304704ebcf26": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo--black.png"
+          }
+        },
         "1f422316-5885-4672-af57-e8d7e77d15d4": {
           "type": "menu",
           "settings": {
@@ -29,6 +35,7 @@
         }
       },
       "block_order": [
+        "2151c583-ece9-4e62-836e-304704ebcf26",
         "1f422316-5885-4672-af57-e8d7e77d15d4",
         "984fce25-77f0-4b2a-b395-3c22013b8b86",
         "c4b28e12-4697-484c-a7b6-4c5f37dda55b"
@@ -41,7 +48,8 @@
         "light-text": false,
         "show-region-selector": false,
         "show-locale-selector": false,
-        "show-payment-icons": false
+        "show-payment-icons": true,
+        "copyright": "COPYRIGHT © 2008-2023 VANA CHUPP STUDIO LLC. ALL RIGHTS RESERVED"
       }
     }
   },
