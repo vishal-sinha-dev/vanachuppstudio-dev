@@ -2718,31 +2718,32 @@ html.no-js .x-menu--level-1--link > a {
 /**
  * Custom
  */
-@media only screen and (min-width: 768px) {
-  .container--root[data-text-position='left'][data-container-width='5']
-    .container--inner {
-    padding-left: var(--spacing--section--x);
-  }
-  .container--root[data-text-position='right'][data-container-width='5']
-    .container--inner {
-    padding-right: var(--spacing--section--x);
-  }
-  .container--root[data-container-width='1'] .container--inner {
-    max-width: var(--max-width--x-small);
-  }
-  .container--root[data-container-width='2'] .container--inner {
-    max-width: var(--max-width--small);
-  }
-  .container--root[data-container-width='3'] .container--inner {
-    max-width: var(--max-width--medium);
-  }
-  .container--root[data-container-width='4'] .container--inner {
-    max-width: var(--max-width--large);
-  }
-  .container--root[data-container-width='5'] .container--inner {
-    max-width: none;
-  }
-  .container--root[data-container-width='6'] .container--inner {
-    max-width: none;
-  }
+.container--root[data-text-position='left'][data-container-width='5']
+  .container--inner {
+  padding-left: var(--spacing--section--x);
+}
+.container--root[data-text-position='right'][data-container-width='5']
+  .container--inner {
+  padding-right: var(--spacing--section--x);
+}
+.container--root[data-container-width='1'] .container--inner {
+  max-width: var(--max-width--x-small);
+}
+.container--root[data-container-width='2'] .container--inner {
+  max-width: var(--max-width--small);
+}
+.container--root[data-container-width='3'] .container--inner {
+  max-width: var(--max-width--medium);
+}
+.container--root[data-container-width='4'] .container--inner {
+  max-width: var(--max-width--large);
+}
+.container--root[data-container-width='5'] .container--inner {
+  max-width: none;
+}
+.container--root[data-container-width='6'] .container--inner {
+  max-width: none;
+}
+.container--inner {
+  margin: auto;
 }

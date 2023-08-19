@@ -3,20 +3,20 @@
   render 'section-assets', name: 'product-tabs', type: 'script'
 -%}
 
-<div class="product-tabs--root">
-  {%- liquid
-    assign container_width = section.settings.container-width
-    assign spacing_above = section.settings.spacing-above
-    assign spacing_below = section.settings.spacing-below
-    assign app_block_label = section.settings.app-block-label
-  -%}
+{%- liquid
+  assign container_width = section.settings.container-width
+  assign spacing_above = section.settings.spacing-above
+  assign spacing_below = section.settings.spacing-below
+  assign app_block_label = section.settings.app-block-label
+-%}
 
-  <div
-    class="featured-content--root"
-    data-container-width="{{ container_width }}"
-    data-spacing-above="{{ spacing_above }}"
-    data-spacing-below="{{ spacing_below }}">
+<div
+  class="product-tabs--root container--root"
+  data-container-width="{{ container_width }}"
+  data-spacing-above="{{ spacing_above }}"
+  data-spacing-below="{{ spacing_below }}">
 
+  <div class="container--inner">
     {% assign apps = "" | split: "|" %}
     {% for block in section.blocks %}
       {% if block.type == "@app" %}

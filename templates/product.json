@@ -175,7 +175,7 @@
         "h2 {font-size: 25px;}"
       ],
       "settings": {
-        "container-width": 3,
+        "container-width": 4,
         "spacing-above": true,
         "spacing-below": true,
         "app-block-label": "Reviews"
