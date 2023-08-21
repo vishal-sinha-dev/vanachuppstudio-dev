@@ -391,10 +391,22 @@
     </div>
 
     <div class="cart--footer">
+      {% assign isAllGiftCard = true %}
+      {% for item in cart.items %}
+        {% if item.product.type != 'Gift Card' %}
+          {% assign isAllGiftCard = false %}
+        {% endif %}
+      {% endfor %}
+
+      {% if isAllGiftCard == false %}
+        <h4>Gift Options</h4>
+        {% render 'gift-wrapping' %}
+      {% endif %}
+
       {%- if show_cart_note -%}
         <div class="cart--notes">
           <label for="{{ view }}-cart-note" class="cart--notes--heading">
-            {{- order_notes_t -}}
+            Note to Vana Chupp Studio:
           </label>
           <textarea
             class="cart--notes--textarea"
@@ -403,6 +415,8 @@
           >{{ cart.note }}</textarea>
         </div>
       {%- endif -%}
+
+      {% render 'hear-about-us' %}
 
       <div class="cart--totals">
         {%- if cart.cart_level_discount_applications != blank -%}
@@ -437,6 +451,13 @@
           <div class="cart--total--price money" data-item="accent-text">
             <span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_total" style="display:none !important;"></span>{{- cart.total_price | money_with_currency -}}
           </div>
+        </div>
+
+        <div style="display: flex; justify-content: flex-end; align-items: center;">
+          <input type="checkbox" class="agree-box" id="agree" style="width: 24px;" />
+          <label for="agree" style="padding: 0;">
+            I’ve read <a target="_blank" href="https://le-papier-studio.myshopify.com/pages/jewelry-care">jewelry care guide</a> and agree to the <a target="_blank" href="/pages/our-custom-silhouette-process">terms and conditions</a>.
+          </label>
         </div>
 
         <p class="affirm-as-low-as" data-page-type="cart" data-amount="{{ cart.total_price }}"></p>
@@ -488,3 +509,23 @@
     {{- empty_html_t -}}
   </div>
 </cart-root>
+
+<script>
+$('body').on('click', '[name="checkout"], [name="goto_pp"], [name="goto_gc"], .slide-out-checkout', function() {
+  var agreed = 0;
+  $('.agree-box').each(function(){
+    if($(this).is(':checked')){
+      agreed = 1;
+      console.log('agreed');
+    };
+  })
+  console.log(agreed);
+  if (agreed == 1) {
+    $(this).submit();
+  }
+  else {
+    alert("You must agree with the store policies to check out.");
+    return false;
+  }
+});
+</script>

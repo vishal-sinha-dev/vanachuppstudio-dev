@@ -1,0 +1,71 @@
+{% assign choices = "Pinterest, Instagram, Friend, Internet Search, Etsy" %}
+
+<div style="max-width: 400px; margin: 20px 0;">
+  <label for="how-did-you-hear-about-us">How did you hear about us?</label>
+  <select id="how-did-you-hear-about-us" name="attributes[how-did-you-hear-about-us]">
+    <option value="" {% if cart.attributes.how-did-you-hear-about-us == "" %}selected{% endif %}>Please make a selection</option>
+    {% assign optionsArray = choices | split: ',' %}
+    {% for o in optionsArray %}
+      <option value="{{ o }}"{% if cart.attributes.how-did-you-hear-about-us == o %}selected{% endif %}>{{ o }}</option>
+    {% endfor %}
+    <option value="Other" {% if cart.attributes.how-did-you-hear-about-us == "Other" %}selected{% endif %}>Other</option>
+  </select>
+</div>
+
+<div style="{% unless cart.attributes.how-did-you-hear-about-us == 'Other' %}display:none;{% endunless %}">
+  <label for="how-did-you-hear-about-us-other">Other:</label>
+  <input
+    id="how-did-you-hear-about-us-other"
+    type="text"
+    name="attributes[how-did-you-hear-about-us-other]"
+    value="{{ cart.attributes.how-did-you-hear-about-us-other }}" />
+</div>
+
+<div style="{% unless cart.attributes.how-did-you-hear-about-us == 'Instagram' %}display:none;{% endunless %}">
+  <label for="how-did-you-hear-about-us-instagram">Instagram Username (Optional):</label>
+  <input
+    id="how-did-you-hear-about-us-instagram"
+    type="text"
+    name="attributes[how-did-you-hear-about-us-instagram]"
+    value="{{ cart.attributes.how-did-you-hear-about-us-instagram }}" />
+</div>
+
+<script>
+  jQuery(function($) {
+    $('#how-did-you-hear-about-us').change(function() {
+      if ($('#how-did-you-hear-about-us').val() == 'Other') {
+        $('#how-did-you-hear-about-us-other').parent('p').show();
+      } else if ($('#how-did-you-hear-about-us').val() == 'Instagram') {
+        $('#how-did-you-hear-about-us-instagram').parent('p').show();
+      } else {
+        $('#how-did-you-hear-about-us-other').val('').parent('p').hide();
+      }
+    });
+
+    $('#how-did-you-hear-about-us').change(function() {
+      if ($('#how-did-you-hear-about-us').val() == 'A blog') {
+        $('#how-did-you-hear-about-us-blog').parent('p').show();
+      } else {
+        $('#how-did-you-hear-about-us-blog').val('').parent('p').hide();
+      }
+    });
+
+    $('[name="checkout"], [name="goto_pp"], [name="goto_gc"]').click(function() {
+      var validated = true;
+      if ($('#how-did-you-hear-about-us').val() == '') {
+        validated = false;
+      } else if ($('#how-did-you-hear-about-us').val() == 'Other') {
+        if ($('#how-did-you-hear-about-us-other').val() == '') {
+          validated = false;
+          $('#how-did-you-hear-about-us-other').addClass('error');
+        }
+      }
+      if (validated) {
+        $(this).submit();
+      } else {
+        alert("Please tell us how you heard about us.");
+        return false;
+      }
+    });
+  });
+</script>

@@ -1356,6 +1356,7 @@ input.cart--quantity--input[data-loading='true'] {
   padding: var(--spacing--section--y) 0 0;
   width: 100%;
   display: flex;
+  flex-direction: column;
 }
 .cart--root:not([data-view='desktop']) .cart--footer {
   padding: var(--spacing--block) 0 0;
@@ -2093,8 +2094,7 @@ svg use svg {
   justify-content: center;
   align-items: center;
   font-weight: 500 !important;
-  font-size:16px;
-  
+  font-size: 16px;
 }
 [data-item='button'] .product-buy-buttons--cta[disabled] {
   cursor: unset;
