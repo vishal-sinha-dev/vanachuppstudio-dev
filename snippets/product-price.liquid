@@ -14,19 +14,18 @@
 
 <product-price-root class="product-price--root" data-id="{{ id }}">
   <div class="product-price--wrapper">
-    <div class="product-price--original" data-item='accent-text'>
-      {{ current_variant.price | money }}
+    <div class="product-price--original" data-item='accent-text' data-itemprop="price" content="{{ current_variant.price }}">
+      Starts at {{ current_variant.price | money }}
     </div>
 
     <div
       class="product-price--compare"
       data-item='light-accent-text'
       {% unless compare_enabled %}
-        style="display:none;"
+      style="display:none;"
       {% else %}
-        style="display:inline-block;"
-      {% endunless %}
-    >
+      style="display:inline-block;"
+      {% endunless %}>
       {%- if compare_enabled -%}
         {{- current_variant.compare_at_price | money -}}
       {%- endif -%}
@@ -37,11 +36,10 @@
     class="product-price--unit-container"
     data-item="small-text"
     {% if current_variant.unit_price_measurement %}
-      style="display:flex;"
+    style="display:flex;"
     {% else %}
-      style="display:none;"
-    {% endif %}
-  >
+    style="display:none;"
+    {% endif %}>
     <span class="product-price--unit-price">
       {{- current_variant.unit_price | money -}}
     </span>/

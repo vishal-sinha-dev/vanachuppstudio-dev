@@ -12,8 +12,7 @@
 <product-buy-buttons-root
   class="product-buy-buttons--root"
   data-id="{{ id }}"
-  style="display:block;"
->
+  style="display:block;">
   {%- form 'product', product, class: 'product-buy-buttons--form', id: id -%}
     {{- form | payment_terms -}}
 
@@ -30,17 +29,15 @@
         data-enabled="true"
         data-loading="false"
         {% if smart_payment_enabled and product.selling_plan_groups == empty %}
-          data-item="secondary-button"
+        data-item="secondary-button"
         {% else %}
-          data-item="button"
-        {% endif %}
-      >
+        data-item="button"
+        {% endif %}>
         <button
           class="addtocart product-buy-buttons--cta"
           {%- unless current_variant.available -%}
-            disabled
-          {%- endunless -%}
-        >
+          disabled
+          {%- endunless -%}>
           <span class="product-buy-buttons--cta-text">
             {%- liquid
               if current_variant.available
@@ -49,6 +46,7 @@
                 echo out_of_stock_t
               endif
             -%}
+            <span class="product-buy-buttons--cta-text-addon" data-vprice="{{ current_variant.price | money }}"></span>
           </span>
           <span class="product-buy-buttons--spinner">
             {%- render 'icons', icon: 'spinner' -%}
@@ -60,15 +58,17 @@
         <div
           class="product-buy-buttons--smart"
           {%- unless current_variant.available -%}
-            style="display:none;"
-          {%- endunless -%}
-        >
+          style="display:none;"
+          {%- endunless -%}>
           {{- form | payment_button -}}
         </div>
       {%- endif -%}
     {%- endif -%}
 
-    <select class="product-buy-buttons--select" name="id" data-mq="none">
+    <select
+      class="product-buy-buttons--select"
+      name="id"
+      data-mq="none">
       {%- for variant in product.variants -%}
         <option
           value="{{ variant.id }}"
@@ -78,9 +78,8 @@
           data-policy="{{ variant.inventory_policy }}"
           data-quantity="{{ variant.inventory_quantity | default: 0 }}"
           {%- if variant == current_variant -%}
-            selected
-          {%- endif -%}
-        >
+          selected
+          {%- endif -%}>
           {{- variant.title -}}
         </option>
       {%- endfor -%}

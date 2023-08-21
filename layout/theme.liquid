@@ -100,27 +100,9 @@
     {% render 'sc-includes' %}
     {% if template == 'product' and product.metafields.inventory.ShappifyHidden or product.type contains '_HIDDEN_' %}<meta name='robots' content='noindex'>{% endif %}
 
-    <script>
-      $(document).ready(function() {
-        $('ul.tabs').each(function(){
-          var active, content, links = $(this).find('a');
-          active = links.first().addClass('active');
-          content = $(active.attr('href'));
-          links.not(':first').each(function () {
-            $($(this).attr('href')).hide();
-          });
-          $(this).find('a').click(function(e){
-            active.removeClass('active');
-            content.hide();
-            active = $(this);
-            content = $($(this).attr('href'));
-            active.addClass('active');
-            content.show();
-            return false;
-          });
-        });
-      });
-    </script>
+    <!-- jQuery and jQuery fallback -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
 
     <!-- Affirm -->
     <script>
@@ -131,15 +113,6 @@
       };
       (function(l,g,m,e,a,f,b){var d,c=l[m]||{},h=document.createElement(f),n=document.getElementsByTagName(f)[0],k=function(a,b,c){return function(){a[b]._.push([c,arguments])}};c[e]=k(c,e,"set");d=c[e];c[a]={};c[a]._=[];d._=[];c[a][b]=k(c,a,b);a=0;for(b="set add save post open empty reset on off trigger ready setProduct".split(" ");a<b.length;a++)d[b[a]]=k(c,e,b[a]);a=0;for(b=["get","token","url","items"];a<b.length;a++)d[b[a]]=function(){};h.async=!0;h.src=g[f];n.parentNode.insertBefore(h,n);delete g[f];d(g);l[m]=c})(window,_affirm_config,"affirm","checkout","ui","script","ready");
       // Use your live public API Key and https://cdn1.affirm.com/js/v2/affirm.js script to point to Affirm production environment.
-    </script>
-
-    <script>
-      affirm.ui.ready(
-        function() {
-          $('.affirm-as-low-as').attr('data-amount',variant.price);
-          affirm.ui.refresh();
-        }
-      );
     </script>
     <!-- End Affirm -->
   </head>
