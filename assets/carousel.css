@@ -378,3 +378,21 @@
   margin-bottom: 60px;
   text-align: center;
 }
+
+.carousel--next-img {
+  background-image: url(../assets/arrow-right.svg);
+  width: 36px;
+  height: 60px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.carousel--prev-img {
+  background-image: url(../assets/arrow-left.svg);
+  width: 36px;
+  height: 60px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
